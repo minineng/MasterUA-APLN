@@ -1,0 +1,4 @@
+marker-pdf
+ollama
+torch
+python-dotenv

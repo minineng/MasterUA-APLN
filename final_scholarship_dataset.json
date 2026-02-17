@@ -1,0 +1,152 @@
+[
+    {
+        "document_name": "BOE-2023-1721",
+        "academic_year": "2023-2024",
+        "aid_amounts": {
+            "income_linked": "0 euros",
+            "residence_linked": "0 euros",
+            "academic_excellence": "variable"
+        },
+        "income_thresholds": [
+            {
+                "family_members": 1,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 2,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 3,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            }
+        ],
+        "application_deadline": "DD/MM/YYYY"
+    },
+    {
+        "document_name": "BOE-2021-1721",
+        "academic_year": "2021-2022",
+        "aid_amounts": {
+            "income_linked": "0 euros",
+            "residence_linked": "0 euros",
+            "academic_excellence": "variable"
+        },
+        "income_thresholds": [
+            {
+                "family_members": 1,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 2,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 3,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            }
+        ],
+        "application_deadline": "30/06/2021"
+    },
+    {
+        "document_name": "Becas de Caracter General para Estudiantes",
+        "academic_year": "2025-2026",
+        "aid_amounts": {
+            "income_linked": "0 euros",
+            "residence_linked": "200 euros",
+            "academic_excellence": "25% incremento en cuantías fijas"
+        },
+        "income_thresholds": [
+            {
+                "family_members": 1,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 2,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 3,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            }
+        ],
+        "application_deadline": "15/06/2025"
+    },
+    {
+        "document_name": "BOE-2024-0321",
+        "academic_year": "2024-2025",
+        "aid_amounts": {
+            "income_linked": "0 euros",
+            "residence_linked": "0 euros",
+            "academic_excellence": "variable"
+        },
+        "income_thresholds": [
+            {
+                "family_members": 1,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 2,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 3,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            }
+        ],
+        "application_deadline": "DD/MM/YYYY"
+    },
+    {
+        "document_name": "BOE-20220310-0011",
+        "academic_year": "2022-2023",
+        "aid_amounts": {
+            "income_linked": "0 euros",
+            "residence_linked": "0 euros",
+            "academic_excellence": "variable"
+        },
+        "income_thresholds": [
+            {
+                "family_members": 1,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 2,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            },
+            {
+                "family_members": 3,
+                "threshold_1": 0,
+                "threshold_2": 0,
+                "threshold_3": 0
+            }
+        ],
+        "application_deadline": "10/03/2022"
+    }
+]
