@@ -1,0 +1,7 @@
+marker-pdf
+transformers
+torch
+spacy
+sentencepiece
+accelerate
+python-dotenv
