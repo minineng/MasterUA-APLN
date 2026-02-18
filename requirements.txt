@@ -1,4 +1,7 @@
 marker-pdf
-ollama
+transformers
 torch
+spacy
+sentencepiece
+accelerate
 python-dotenv

@@ -1,103 +1,70 @@
 import os
-import json
-import ollama
+import spacy
+from transformers import pipeline
+
+# SpaCy Model Loading
+# We use the Spanish model to match the BOE's language.
+try:
+    nlp = spacy.load("es_core_news_sm")
+except:
+    spacy.cli.download("es_core_news_sm")
+    nlp = spacy.load("es_core_news_sm")
+
+# Question Answering
+qa_model = pipeline(
+    "question-answering",
+    model="mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es"
+)
 
 def extract_scholarship_data(file_path):
-    """
-    Reads a Markdown file and uses Llama 3.2 to extract 
-    structured information from BOE scholarship announcements.
-    """
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except Exception as e:
-        print(f"Error reading file {file_path}: {e}")
+    # We combine NER and QA
+    if not os.path.exists(file_path):
         return None
 
-    # System and user prompts in English
-    # We limit content to 12,000 characters to stay within local LLM context limits
-    user_prompt = f"""
-    Analyze this BOE (Official State Gazette) document regarding student scholarships and extract technical information.
-    Focus on the academic year, financial aid amounts, income thresholds, and deadlines.
-    
-    Return ONLY a JSON object with the following structure:
-    {{
-      "document_name": "filename",
-      "academic_year": "e.g., 2024-2025",
-      "aid_amounts": {{
-        "income_linked": "fixed amount",
-        "residence_linked": "fixed amount",
-        "academic_excellence": "range or fixed amount"
-      }},
-      "income_thresholds": [
-        {{ "family_members": 1, "threshold_1": 0, "threshold_2": 0, "threshold_3": 0 }},
-        {{ "family_members": 2, "threshold_1": 0, "threshold_2": 0, "threshold_3": 0 }},
-        {{ "family_members": 3, "threshold_1": 0, "threshold_2": 0, "threshold_3": 0 }}
-      ],
-      "application_deadline": "DD/MM/YYYY"
-    }}
+    with open(file_path, 'r', encoding='utf-8') as f:
+        # We read the full content
+        content = f.read()
 
-    Document content:
-    {content[:12000]}
-    """
+    # NER for fixed entities
+    doc = nlp(content[:20000])
+    issuing_body = "Not identified"
+    for ent in doc.ents:
+        if ent.label_ == "ORG":
+            issuing_body = ent.text
+            break
 
-    try:
-        # Calling local Ollama instance
-        response = ollama.chat(
-            model='llama3.2:3b',
-            messages=[
-                {'role': 'system', 'content': 'You are a precise data extractor. You only output valid JSON.'},
-                {'role': 'user', 'content': user_prompt}
-            ],
-            format='json',
-            options={'temperature': 0.1} # Low temperature for higher factual accuracy
-        )
-        
-        # Parse and return the JSON content
-        return json.loads(response['message']['content'])
-    
-    except Exception as e:
-        print(f"Error processing {file_path} with LLM: {e}")
-        return None
+    # QA for variable data
+    questions = {
+        "academic_year": "¿A qué curso académico pertenece esta convocatoria?",
+        "income_linked": "¿Cuál es la cuantía de la beca fija ligada a la renta?",
+        "residence_linked": "¿Cuál es la cuantía de la beca fija ligada a la residencia?",
+        "deadline": "¿Cuál es la fecha límite para presentar la solicitud?"
+    }
 
-def main():
-    # 1. Path configuration (input folder from your teammate's branch)
-    input_folder = 'export' 
-    output_file = 'extracted_scholarships.json'
-    
-    if not os.path.exists(input_folder):
-        print(f"Input folder '{input_folder}' not found. Please run the preprocessing script first.")
-        return
+    results = {
+        "document_name": os.path.basename(os.path.dirname(file_path)),
+        "issuing_body": issuing_body,
+        "academic_year": "",
+        "aid_amounts": {
+            "income_linked": "",
+            "residence_linked": ""
+        },
+        "application_deadline": ""
+    }
 
-    # 2. List Markdown files
-    md_files = [f for f in os.listdir(input_folder) if f.endswith('.md')]
-    
-    if not md_files:
-        print("ℹ️ No .md files found in the input folder.")
-        return
+    # We iterate through the questions and extract the exact span from the text.
+    for key, q in questions.items():
+        # The model returns the 'answer' string found in the context.
+        res = qa_model(question=q, context=content)
+        answer = res['answer']
 
-    print(f"🚀 Starting extraction of {len(md_files)} documents using Llama 3.2...")
-    
-    final_results = []
+        if key == "academic_year":
+            results["academic_year"] = answer
+        elif key == "income_linked":
+            results["aid_amounts"]["income_linked"] = answer
+        elif key == "residence_linked":
+            results["aid_amounts"]["residence_linked"] = answer
+        elif key == "deadline":
+            results["application_deadline"] = answer
 
-    # 3. Process each file
-    for filename in md_files:
-        file_path = os.path.join(input_folder, filename)
-        print(f"--- Processing: {filename} ---")
-        
-        data = extract_scholarship_data(file_path)
-        if data:
-            # Add the filename to the data for traceability
-            data['document_source'] = filename
-            final_results.append(data)
-
-    # 4. Save the final JSON results
-    try:
-        with open(output_file, 'w', encoding='utf-8') as f_out:
-            json.dump(final_results, f_out, indent=4, ensure_ascii=False)
-        print(f"\nExtraction complete. Structured data saved to: {output_file}")
-    except Exception as e:
-        print(f"Error saving the output JSON: {e}")
-
-if __name__ == "__main__":
-    main()
+    return results
