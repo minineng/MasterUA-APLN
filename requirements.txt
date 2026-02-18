@@ -5,3 +5,4 @@ spacy
 sentencepiece
 accelerate
 python-dotenv
+pandas

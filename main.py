@@ -1,7 +1,16 @@
 import os
 import json
-from preprocessing import run_preprocessing
-from extractor import extract_scholarship_data
+from typing import Dict
+from utils.preprocessing import run_preprocessing
+from utils.extractor import extract_scholarship_data
+from utils.io import *
+import pandas as pd
+
+DATA_DIR = "data"
+CORPUS_DIR = "corpus"
+PREPROCESSED_DIR = "preprocessed"
+PROCESSED_DIR = "processed"
+SUMMARY_DIR = "summary"
 
 def main():
     # 1. PDF to Markdown
@@ -12,7 +21,7 @@ def main():
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
     print("\n--- STAGE 2: NLU DATA EXTRACTION (HF + SpaCy) ---")
-    export_dir = "export"
+    export_dir = f"{DATA_DIR}/{PREPROCESSED_DIR}"
     final_results = []
 
     if not os.path.exists(export_dir):
@@ -37,12 +46,12 @@ def main():
             print(f"Warning: No 'text.md' found in {folder_path}")
 
     # 3. Save the integrated dataset
-    # We export the structured information to the final JSON file
-    output_filename = "final_scholarship_dataset.json"
+    # We export the structured information to the final JSON file    
     
     if final_results:
-        with open(output_filename, "w", encoding="utf-8") as f:
-            json.dump(final_results, f, indent=4, ensure_ascii=False)
+        print("\n--- STAGE 3: WRITE PROCESSED FILES ---")
+        output_filename = "final_scholarship_dataset"
+        write_processed(final_results, f"{DATA_DIR}/{PROCESSED_DIR}/{output_filename}")
         
         print(f"\n🚀 PIPELINE COMPLETE!")
         print(f"Total documents processed: {len(final_results)}")
