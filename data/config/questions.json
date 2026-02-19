@@ -1,0 +1,8 @@
+{
+    "questions": {
+        "año_academico": "¿A qué curso académico pertenece esta convocatoria?",
+        "cuantia_renta": "¿Cuál es la cuantía de la beca fija ligada a la renta?",
+        "cuantia_residencia": "¿Cuál es la cuantía de la beca fija ligada a la residencia?",
+        "fecha_limite": "¿Cuál es la fecha límite para presentar la solicitud?"
+    }
+}

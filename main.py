@@ -1,7 +1,14 @@
 import os
-import json
-from preprocessing import run_preprocessing
-from extractor import extract_scholarship_data
+from utils.preprocessing import run_preprocessing
+from utils.extractor import Extractor
+from utils.io import *
+import pandas as pd
+
+DATA_DIR = "data"
+CORPUS_DIR = "corpus"
+PREPROCESSED_DIR = "preprocessed"
+PROCESSED_DIR = "processed"
+SUMMARY_DIR = "summary"
 
 def main():
     # 1. PDF to Markdown
@@ -12,7 +19,8 @@ def main():
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
     print("\n--- STAGE 2: NLU DATA EXTRACTION (HF + SpaCy) ---")
-    export_dir = "export"
+    extractor = Extractor()
+    export_dir = f"{DATA_DIR}/{PREPROCESSED_DIR}"
     final_results = []
 
     if not os.path.exists(export_dir):
@@ -23,11 +31,12 @@ def main():
     for folder in os.listdir(export_dir):
         folder_path = os.path.join(export_dir, folder)
         md_file_path = os.path.join(folder_path, "text.md")
-        
-        if os.path.exists(md_file_path):
+        if not os.path.isdir(folder_path):
+            continue
+        if os.path.exists(md_file_path):       
             print(f"Extracting data from: {folder}...")
             try:
-                extracted_json = extract_scholarship_data(md_file_path)
+                extracted_json = extractor.extract_scholarship_data(md_file_path)
                 
                 if extracted_json:
                     final_results.append(extracted_json)
@@ -37,12 +46,12 @@ def main():
             print(f"Warning: No 'text.md' found in {folder_path}")
 
     # 3. Save the integrated dataset
-    # We export the structured information to the final JSON file
-    output_filename = "final_scholarship_dataset.json"
+    # We export the structured information to the final JSON file    
     
     if final_results:
-        with open(output_filename, "w", encoding="utf-8") as f:
-            json.dump(final_results, f, indent=4, ensure_ascii=False)
+        print("\n--- STAGE 3: WRITE PROCESSED FILES ---")
+        output_filename = "final_scholarship_dataset"
+        write_processed(final_results, f"{DATA_DIR}/{PROCESSED_DIR}/{output_filename}")
         
         print(f"\n🚀 PIPELINE COMPLETE!")
         print(f"Total documents processed: {len(final_results)}")
