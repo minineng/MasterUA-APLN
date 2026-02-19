@@ -1,8 +1,6 @@
 import os
-import json
-from typing import Dict
 from utils.preprocessing import run_preprocessing
-from utils.extractor import extract_scholarship_data
+from utils.extractor import Extractor
 from utils.io import *
 import pandas as pd
 
@@ -21,6 +19,7 @@ def main():
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
     print("\n--- STAGE 2: NLU DATA EXTRACTION (HF + SpaCy) ---")
+    extractor = Extractor()
     export_dir = f"{DATA_DIR}/{PREPROCESSED_DIR}"
     final_results = []
 
@@ -32,11 +31,12 @@ def main():
     for folder in os.listdir(export_dir):
         folder_path = os.path.join(export_dir, folder)
         md_file_path = os.path.join(folder_path, "text.md")
-        
-        if os.path.exists(md_file_path):
+        if not os.path.isdir(folder_path):
+            continue
+        if os.path.exists(md_file_path):       
             print(f"Extracting data from: {folder}...")
             try:
-                extracted_json = extract_scholarship_data(md_file_path)
+                extracted_json = extractor.extract_scholarship_data(md_file_path)
                 
                 if extracted_json:
                     final_results.append(extracted_json)

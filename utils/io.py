@@ -36,6 +36,10 @@ def read_csv(filename:str) -> Dict:
 def write_csv(df, filename:str):
     df.to_csv(filename, index=False, encoding="utf-8")
 
+def read_txt(filename:str) -> str:
+    with open(filename, "r", encoding="utf-8") as f:
+        return f.read()
+
 def write_processed(data:Dict, filename:str):
     write_json(data, f"{filename}.json")
     df = pd.json_normalize(data, sep='_')
