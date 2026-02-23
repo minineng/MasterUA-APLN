@@ -2,7 +2,6 @@ import os
 from utils.preprocessing import run_preprocessing
 from utils.extractor import Extractor
 from utils.io import *
-import pandas as pd
 
 DATA_DIR = "data"
 CORPUS_DIR = "corpus"
@@ -14,7 +13,7 @@ def main():
     # 1. PDF to Markdown
     # Using marker-pdf to convert original PDFs into clean Markdown
     print("--- STAGE 1: PDF PREPROCESSING ---")
-    # run_preprocessing("corpus")
+    run_preprocessing(os.path.join(DATA_DIR,CORPUS_DIR), os.path.join(DATA_DIR, PREPROCESSED_DIR))
 
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
@@ -27,23 +26,15 @@ def main():
         print(f"Error: {export_dir} folder not found. Preprocessing might have failed.")
         return
 
-    # Navigate through the subfolders created by marker-pdf
-    for folder in os.listdir(export_dir):
-        folder_path = os.path.join(export_dir, folder)
-        md_file_path = os.path.join(folder_path, "text.md")
-        if not os.path.isdir(folder_path):
-            continue
-        if os.path.exists(md_file_path):       
-            print(f"Extracting data from: {folder}...")
+    # Navigate through the markdown created by pymupdf4llm
+    for file in os.listdir(export_dir):
+        if file.endswith(".md"):
             try:
-                extracted_json = extractor.extract_scholarship_data(md_file_path)
-                
+                extracted_json = extractor.extract_scholarship_data(file)
                 if extracted_json:
                     final_results.append(extracted_json)
             except Exception as e:
-                print(f"Error in NLU stage for {folder}: {e}")
-        else:
-            print(f"Warning: No 'text.md' found in {folder_path}")
+                print(f"Error in NLU stage for {file}: {e}")
 
     # 3. Save the integrated dataset
     # We export the structured information to the final JSON file    
