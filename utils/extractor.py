@@ -61,7 +61,7 @@ class Extractor():
         questions = question_config["questions"].copy()
 
         results = {
-            "nombre_documento": os.path.basename(os.path.dirname(file_path)),
+            "nombre_documento": os.path.basename(file_path),
             "cuerpo_emisor": issuing_body
         }
 
