@@ -1,5 +1,5 @@
 import os
-from utils.preprocessing import run_preprocessing
+from utils.preprocessing import run_preprocessing, run_markdown_cleaning
 from utils.extractor import Extractor
 from utils.io import *
 import pandas as pd
@@ -15,6 +15,7 @@ def main():
     # Using marker-pdf to convert original PDFs into clean Markdown
     print("--- STAGE 1: PDF PREPROCESSING ---")
     # run_preprocessing("corpus")
+    run_markdown_cleaning(f"{DATA_DIR}/{PREPROCESSED_DIR}")
 
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
