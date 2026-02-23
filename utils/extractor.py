@@ -48,7 +48,7 @@ class Extractor():
         content = read_txt(file_path)
 
         # NER for fixed entities
-        doc = self.nlp(content[:20000])
+        doc = self.nlp(content)
         issuing_body = "Not identified"
         for ent in doc.ents:
             if ent.label_ == "ORG":
