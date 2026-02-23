@@ -30,9 +30,9 @@ def main():
     for file in os.listdir(export_dir):
         if file.endswith(".md"):
             try:
-                extracted_json = extractor.extract_scholarship_data(os.path.join(export_dir,file))
-                if extracted_json:
-                    final_results.append(extracted_json)
+                extracted_data = extractor.extract_scholarship_data(os.path.join(export_dir,file))
+                if extracted_data:
+                    final_results.append(extracted_data)
             except Exception as e:
                 print(f"Error in NLU stage for {file}: {e}")
 

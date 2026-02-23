@@ -23,6 +23,9 @@ def run_preprocessing(input_folder="corpus", output_folder="preprocessed"):
             print(f"Processing {file}")
             input_file = os.path.join(input_folder, file)
             output_file = f"{output_folder}/{file.replace('.pdf', '.md')}"
+            if os.path.exists(output_file):
+                print(f'Skipping {input_file} as {output_file} already exists.')
+                continue
             pdf_process(input_file, output_file)
             
     print("Preprocessing finished.")
