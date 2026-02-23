@@ -209,3 +209,4 @@ __marimo__/
 __pycache__/
 data/processed/*
 data/summary/*
+data/preprocessed/*

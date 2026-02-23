@@ -6,3 +6,5 @@ sentencepiece
 accelerate
 python-dotenv
 pandas
+wordcloud
+matplotlib

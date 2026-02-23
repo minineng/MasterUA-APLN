@@ -2,12 +2,14 @@ import os
 from utils.preprocessing import run_preprocessing, run_markdown_cleaning
 from utils.extractor import Extractor
 from utils.io import *
+from utils.analysis import run_tf_id_analysis
 import pandas as pd
 
 DATA_DIR = "data"
 CORPUS_DIR = "corpus"
 PREPROCESSED_DIR = "preprocessed"
 PROCESSED_DIR = "processed"
+ADDITIONAL_ANALYSIS_DIR = "analysis"
 SUMMARY_DIR = "summary"
 
 def main():
@@ -17,10 +19,14 @@ def main():
     # run_preprocessing("corpus")
     run_markdown_cleaning(f"{DATA_DIR}/{PREPROCESSED_DIR}")
 
+    extractor = Extractor()
+    # 1.5 TF-IDF Analysis (Optional)
+    # This step is not strictly necessary for the final dataset, but we wanted to do it to see the insights it can provide.
+    run_tf_id_analysis(f"{DATA_DIR}/{PREPROCESSED_DIR}", f"{DATA_DIR}/{ADDITIONAL_ANALYSIS_DIR}", extractor)
+
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
     print("\n--- STAGE 2: NLU DATA EXTRACTION (HF + SpaCy) ---")
-    extractor = Extractor()
     export_dir = f"{DATA_DIR}/{PREPROCESSED_DIR}"
     final_results = []
 
