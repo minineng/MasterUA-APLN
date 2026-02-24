@@ -1,4 +1,3 @@
-marker-pdf
 transformers
 torch
 spacy
@@ -6,5 +5,8 @@ sentencepiece
 accelerate
 python-dotenv
 pandas
+pymupdf.layout
+pymupdf4llm
 wordcloud
 matplotlib
+scikit-learn
