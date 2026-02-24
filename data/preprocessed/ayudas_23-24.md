@@ -1,6 +1,6 @@
 
 
-# **RESOLUCIÓN DE LA SECRETARÍA DE ESTADO DE EDUCACIÓN, POR LA QUE SE CONVOCAN BECAS DE CARÁCTER GENERAL PARA EL CURSO ACADÉMICO 2023-2024PARA ESTUDIANTES QUE CURSEN ESTUDIOS POSTOBLIGATORIOS**
+## **RESOLUCIÓN DE LA SECRETARÍA DE ESTADO DE EDUCACIÓN, POR LA QUE SE CONVOCAN BECAS DE CARÁCTER GENERAL PARA EL CURSO ACADÉMICO 2023-2024PARA ESTUDIANTES QUE CURSEN ESTUDIOS POSTOBLIGATORIOS**
 
 El Real Decreto 1721/2007, de 21 de diciembre, estableció un nuevo régimen de las becas y ayudas al estudio del Ministerio de Educación y Formación Profesional, modificando el anteriormente vigente de gestión centralizada y regulando, con carácter básico, los parámetros precisos para asegurar la igualdad en el acceso a las citadas becas y ayudas al estudio sin detrimento de las competencias normativas y de ejecución de las comunidades autónomas. 
 

@@ -1,4 +1,5 @@
 from math import nan
+import unicodedata
 from xmlrpc.client import MAXINT
 
 import pymupdf.layout  # activate PyMuPDF-Layout in pymupdf
@@ -17,7 +18,7 @@ def pdf_process(input_file, output_file):
     # Remove page number
     md_text = re.sub(r"\n *?\d+ *?\n", r"\n", md_text)
     # Fix title
-    md_text = re.sub(r"\n## *\*\*(.*?)\*\* *\n+## *\*\*(.*?)\*\* *\n", r"\n# **\1\2**\n", md_text)
+    md_text = re.sub(r"\n## *\*\*(.*?)\*\* *\n+## *\*\*(.*?)\*\* *\n", r"\n## **\1\2**\n", md_text)
     # Regenerate broken sentences
     matches = MAXINT
     while matches != 0:
@@ -49,15 +50,6 @@ def run_preprocessing(input_folder="corpus", output_folder="preprocessed"):
             
     print("Preprocessing finished.")
 
-START_MARKERS = [
-    r"\bCAP[IÍ]TULO\s+I\b",
-    r"\bCap[ií]tulo\s+I\b",
-    r"\bCAP[IÍ]TULO\s+PRIMERO\b",
-    r"\bT[ÍI]TULO\s+I\b",
-    r"\bArtículo\s+1\b",
-    r"\bART[IÍ]CULO\s+1\b",
-]
-
 REMOVE_LINE_PATTERNS = [
     r"^!\[.*\]\(.*\)\s*$",
     r"^Código seguro de Verificación",
@@ -72,6 +64,7 @@ REMOVE_LINE_PATTERNS = [
 
 # Define headers to remove entire sections
 REMOVE_SECTION_HEADERS = [
+    r"^## \*\*RESOLUCIÓN DE LA SECRETARÍA DE ESTADO DE EDUCACIÓN.*",
     r"^## Artículo 41.*",
     r"^## Artículo 42.*",
     r"^## Artículo 46.*",
@@ -93,7 +86,7 @@ def clean_markdown_text(text: str) -> str:
     - Crop to relevant content
     """
 
-    # Step 1: Remove entire sections based on headers (FIXED)
+    # Step 1: Remove entire sections based on headers
     lines = text.split("\n")
     keep_lines = []
     in_remove_section = False
@@ -118,7 +111,7 @@ def clean_markdown_text(text: str) -> str:
             continue
         
         if in_remove_section:
-            # FIXED: Stop at header of SAME LEVEL or HIGHER
+            # Stop at header of SAME LEVEL or HIGHER
             if header_level >= 1 and header_level <= remove_header_level:
                 in_remove_section = False  # End removal
             continue
@@ -128,20 +121,14 @@ def clean_markdown_text(text: str) -> str:
     text = "\n".join(keep_lines)
 
 
-    # Step 2: Remove individual lines matching patterns (existing logic)
+    # Step 2: Remove individual lines matching patterns
     cleaned_lines = []
     for line in text.split("\n"):
         s = line.strip()
         if not s:
-            cleaned_lines.append("")
             continue
 
-        skip = False
-        for pat in REMOVE_LINE_PATTERNS:
-            if re.search(pat, s):
-                skip = True
-                break
-        if skip:
+        if any([re.search(pat, s) for pat in REMOVE_LINE_PATTERNS ]):
             continue
 
         s = re.sub(r"\s{2,}", " ", s)
@@ -152,18 +139,18 @@ def clean_markdown_text(text: str) -> str:
     # Step 3: Dehyphenation: "gene-\nral" -> "general"
     text2 = re.sub(r"(\w)-\n(\w)", r"\1\2", text2)
 
-    # Step 4: Crop to relevant start (existing logic)
-    start_idx = None
-    for pat in START_MARKERS:
-        m = re.search(pat, text2)
-        if m:
-            start_idx = m.start()
-            break
-    if start_idx is not None:
-        text2 = text2[start_idx:]
+    # Step 4: Cleanup text
+    
+    # 1. Remove table artifacts & markdown
+    text2 = re.sub(r'(\|\ *?-+?\ *?\|)|(-+?\ *?\|)|([•|]+)|(—{2,})', ' ', text2)
 
-    # Step 5: Normalize whitespace
-    text2 = re.sub(r"\n{3,}", "\n\n", text2).strip() + "\n"
+    # 2. Remove HTML
+    text = re.sub(r'<br>(.*?)<br>', r'\1', text)
+    text = re.sub(rf'(\. ){2,}', r' ', text)
+    
+    # 3. Normalize whitespace first
+    text2 = re.sub(r'\ +', ' ', text2)
+    text2 = re.sub(r'\n+', '\n', text2)
 
     return text2
 

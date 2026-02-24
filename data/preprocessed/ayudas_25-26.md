@@ -6,7 +6,7 @@
 
 
 
-# **RESOLUCIÓN DE LA SECRETARÍA DE ESTADO DE EDUCACIÓN, POR LA QUE SE CONVOCAN BECAS DE CARÁCTER GENERAL PARA EL CURSO ACADÉMICO 2025-2026PARA ESTUDIANTES QUE CURSEN ESTUDIOS POSTOBLIGATORIOS.**
+## **RESOLUCIÓN DE LA SECRETARÍA DE ESTADO DE EDUCACIÓN, POR LA QUE SE CONVOCAN BECAS DE CARÁCTER GENERAL PARA EL CURSO ACADÉMICO 2025-2026PARA ESTUDIANTES QUE CURSEN ESTUDIOS POSTOBLIGATORIOS.**
 
 La convocatoria de becas de carácter general para estudios postobligatorios constituye un pilar fundamental del sistema estatal de becas y ayudas al estudio que se regula en el 83 de la Ley Orgánica 2/2006, de 3 de mayo, de Educación, y el artículo 32 de la Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario. 
 

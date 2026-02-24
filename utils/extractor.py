@@ -12,8 +12,23 @@ class Extractor():
 
     QUESTION_CONFIG_PATH = "data/config/questions.json"
     RE_CUANTIA = re.compile(r"\d+,?\d*")
-    CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
 
+    class Tokenizer:
+        CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
+        def __init__(self, nlp, custom_stops = []):
+            self.nlp = nlp
+            self.stopwords = self.CUSTOM_STOPWORDS
+            self.stopwords.union(custom_stops)
+            
+        def __call__(self, text):
+            doc = self.nlp(text)
+            tokens = [
+                token.lower_.strip()
+                for token in doc
+                if not (token.is_punct or token.is_space or token.is_stop or len(token.text) < 2)
+                and token.text not in self.stopwords
+            ]
+            return tokens
     def __init__(self):
         print("Extractor created...")
         self.nlp = None
@@ -36,26 +51,16 @@ class Extractor():
             "question-answering",
             model="mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es"
         )
+    
+    def get_tokenizer(self, custom_stops = []):
+        return self.Tokenizer(self.nlp, custom_stops)
 
     def normalize_text(self, text: str) -> str:
         if not text:
             return ""
 
-        doc = self.nlp(text)
-        tokens = []
-
-        for token in doc:
-            if token.is_punct:
-                continue
-            if token.is_space:
-                continue
-            if token.is_stop:
-                continue
-            if token.lower_ in self.CUSTOM_STOPWORDS:
-                continue
-            tokens.append(token.lower_)
-
-        return " ".join(tokens)
+        tokenizer = self.get_tokenizer()
+        return " ".join(tokenizer(text))
 
     def extract_scholarship_data(self, file_path):
 
