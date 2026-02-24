@@ -3,6 +3,7 @@ from utils.preprocessing import run_preprocessing, run_markdown_cleaning
 from utils.extractor import Extractor
 from utils.io import *
 from utils.analysis import run_document_term_scoring
+from utils.generator import SummaryGenerator
 
 DATA_DIR = "data"
 CORPUS_DIR = os.path.join(DATA_DIR,"corpus")
@@ -50,11 +51,21 @@ def main():
         output_filename = "final_scholarship_dataset"
         write_processed(final_results, os.path.join(PROCESSED_DIR , output_filename))
         
-        print(f"\n🚀 PIPELINE COMPLETE!")
+        print(f"\nPIPELINE COMPLETE!")
         print(f"Total documents processed: {len(final_results)}")
         print(f"Results saved to: {output_filename}")
     else:
         print("\nPipeline finished but no data was extracted.")
+
+    print("\n--- STAGE 4: SUMMARY GENERATION ---")
+    try:
+        input_json = os.path.join("data", "processed", "final_scholarship_dataset.json")
+        generator = SummaryGenerator(model_name="llama3")
+        generator.process_dataset(input_json, SUMMARY_DIR)
+        print(f"\n¡Success! Summaries generated in: {SUMMARY_DIR}")
+
+    except Exception as e:
+        print(f"Error generating the summary: {e}")
 
 if __name__ == "__main__":
     main()
