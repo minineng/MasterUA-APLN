@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 import json
 
-def analyze_tf_idf(input_file: str, output_file: str, extractor: Extractor):
+def analyze_term_scores(input_file: str, output_file: str, extractor: Extractor):
     normalized_text = extractor.normalize_text(read_txt(input_file))
     vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform([normalized_text])
@@ -17,7 +17,7 @@ def analyze_tf_idf(input_file: str, output_file: str, extractor: Extractor):
 
     write_json(dict(sorted_words), output_file) 
 
-def run_tf_id_analysis(in_folder: str, out_folder: str, extractor: Extractor):
+def run_document_term_scoring(in_folder: str, out_folder: str, extractor: Extractor):
 
     if not os.path.exists(in_folder):
         print(f"Error: {in_folder} not found.")
@@ -33,7 +33,7 @@ def run_tf_id_analysis(in_folder: str, out_folder: str, extractor: Extractor):
             continue       
 
         analysis_file = os.path.join(out_folder, f"{folder}_analysis.json")
-        analyze_tf_idf(in_md, analysis_file, extractor)
+        analyze_term_scores(in_md, analysis_file, extractor)
         generate_word_cloud(analysis_file, os.path.join(out_folder, f"{folder}_wordcloud.png"))
         print(f"File analyzed: {folder} -> {analysis_file}")
 
