@@ -11,7 +11,7 @@ import time
 class Extractor():
 
     QUESTION_CONFIG_PATH = "data/config/questions.json"
-    RE_CUANTIA = re.compile(r"\d{1,3}(:?\.\d{3})*(:?,\d+)")
+    RE_CUANTIA = re.compile(r"(\d{1,3}(?:\.\d{3})*(?:,\d+)) euros")
     CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
 
     class Tokenizer:
@@ -93,10 +93,10 @@ class Extractor():
             res = self.qa_model(question=q, context=content)
             answer = res['answer']
 
-            if key.find("cuantia") != -1:            
-                numbers = re.findall(self.RE_CUANTIA, answer.replace('.', ''))
+            if key.find("cuantia") != -1:
+                numbers = re.findall(self.RE_CUANTIA, answer)
                 if numbers:
-                    answer = float(numbers[0].replace(',', '.'))
+                    answer = float(numbers[0].replace('.', '').replace(',', '.'))
 
             results[key] = answer
 
