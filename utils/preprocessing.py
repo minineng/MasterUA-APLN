@@ -145,9 +145,9 @@ def clean_markdown_text(text: str) -> str:
     text2 = re.sub(r'(\|\ *?-+?\ *?\|)|(-+?\ *?\|)|([•|]+)|(—{2,})', ' ', text2)
 
     # 2. Remove HTML
-    text = re.sub(r'<br>(.*?)<br>', r'\1', text)
-    text = re.sub(rf'(\. ){2,}', r' ', text)
-    
+    text2 = re.sub(r'<br>(.*?)<br>', r'\1', text2)
+    text2 = re.sub(rf'(\. ){2,}', r' ', text2)
+
     # 3. Normalize whitespace first
     text2 = re.sub(r'\ +', ' ', text2)
     text2 = re.sub(r'\n+', '\n', text2)
