@@ -11,7 +11,7 @@ import time
 class Extractor():
 
     QUESTION_CONFIG_PATH = "data/config/questions.json"
-    RE_CUANTIA = re.compile(r"\d+,?\d*")
+    RE_CUANTIA = re.compile(r"\d{1,3}(:?\.\d{3})*(:?,\d+)")
     CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
 
     class Tokenizer:
