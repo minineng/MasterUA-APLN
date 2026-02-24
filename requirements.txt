@@ -7,3 +7,5 @@ python-dotenv
 pandas
 pymupdf.layout
 pymupdf4llm
+wordcloud
+matplotlib

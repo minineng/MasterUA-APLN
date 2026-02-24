@@ -1,12 +1,14 @@
 import os
-from utils.preprocessing import run_preprocessing
+from utils.preprocessing import run_preprocessing, run_markdown_cleaning
 from utils.extractor import Extractor
 from utils.io import *
+from utils.analysis import run_document_term_scoring
 
 DATA_DIR = "data"
 CORPUS_DIR = "corpus"
 PREPROCESSED_DIR = "preprocessed"
 PROCESSED_DIR = "processed"
+ADDITIONAL_ANALYSIS_DIR = "analysis"
 SUMMARY_DIR = "summary"
 
 def main():
@@ -14,11 +16,16 @@ def main():
     # Using marker-pdf to convert original PDFs into clean Markdown
     print("--- STAGE 1: PDF PREPROCESSING ---")
     run_preprocessing(os.path.join(DATA_DIR,CORPUS_DIR), os.path.join(DATA_DIR, PREPROCESSED_DIR))
+    run_markdown_cleaning(f"{DATA_DIR}/{PREPROCESSED_DIR}")
+
+    extractor = Extractor()
+    # 1.5 Term Scoring Analysis (Optional)
+    # This step is not strictly necessary for the final dataset, but we wanted to do it to see the insights it can provide.
+    run_document_term_scoring(f"{DATA_DIR}/{PREPROCESSED_DIR}", f"{DATA_DIR}/{ADDITIONAL_ANALYSIS_DIR}", extractor)
 
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
     print("\n--- STAGE 2: NLU DATA EXTRACTION (HF + SpaCy) ---")
-    extractor = Extractor()
     export_dir = f"{DATA_DIR}/{PREPROCESSED_DIR}"
     final_results = []
 
