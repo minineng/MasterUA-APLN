@@ -34,7 +34,7 @@ def main():
 
     # Navigate through the markdown created by pymupdf4llm
     for file in os.listdir(PREPROCESSED_DIR):
-        if file.endswith(".md"):
+        if file.endswith(".clean.md"):
             try:
                 extracted_data = extractor.extract_scholarship_data(os.path.join(PREPROCESSED_DIR,file))
                 if extracted_data:

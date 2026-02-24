@@ -1,5 +1,3 @@
-MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES 
-
 **==> picture [66 x 22] intentionally omitted <==**
 
 **==> picture [67 x 22] intentionally omitted <==**
@@ -35,10 +33,6 @@ Por lo demás, en esta Resolución se prevé la posibilidad de celebrar convenio
 Por todo ello, de conformidad con la disposición adicional novena de la Ley 24/2005, de 18 de noviembre, de Reforma para el Impulso de la Productividad, los Reales Decretos anteriormente 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-1 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -77,10 +71,6 @@ La efectividad de esta cuantía adicional queda condicionada a la declaración d
 académicos correspondientes a los estudiantes exentos de su pago por ser beneficiarios de beca, 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-2 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -139,8 +129,6 @@ concertados que tengan autorizadas enseñanzas de formación profesional.
 3 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -206,10 +194,6 @@ necesario para obtener la titulación de que se trate.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-4 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 En el caso de los estudiantes de universidades privadas y de centros docentes adscritos a universidades públicas y privadas que no apliquen los precios públicos oficiales aprobados por la Comunidad Autónoma, la cuantía de esta beca será igual al precio mínimo establecido por la Comunidad Autónoma en la que el solicitante curse sus estudios para un estudio con la misma 
@@ -263,10 +247,6 @@ establecimiento similar.
 3. Para la concesión de esta cuantía en los niveles no universitarios se tendrá en cuenta la existencia o no de centro docente adecuado en la localidad en la que reside el becario u otra 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-5 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -330,10 +310,6 @@ enseñanzas deportivas.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-6 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 - d)  Enseñanzas universitarias conducentes al título de grado. 
@@ -388,10 +364,6 @@ Cmin = Cuantía variable mínima, que se establecerá en los reales decretos anu
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-7 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Ctotal = Importe total a distribuir de forma variable: en cada convocatoria se podrán fijar una o 
@@ -439,10 +411,6 @@ Para los becarios de primer curso de grado superior de formación profesional, d
 ciclo. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-8 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -511,8 +479,6 @@ de 60,00 euros.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## Artículo 12. _Cuantías adicionales por domicilio insular o en las Ciudades de Ceuta o de Melilla_ . 
@@ -567,10 +533,6 @@ de los que se haya matriculado por primera vez.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-10 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 3. La matrícula reducida en el caso de estos estudiantes no comportará la limitación en las 
@@ -596,10 +558,6 @@ cuantías que se establecen en los artículos precedentes para los supuestos de 
 4.º) Estudiantes universitarios: 30 créditos o la mitad del curso completo en el caso de dobles titulaciones de grado. En estos casos, la beca de matrícula se extenderá a los créditos de que se matriculen tanto por primera como por segunda vez. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-11 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -630,10 +588,6 @@ En el supuesto de extranjeros no comunitarios, se aplicará lo dispuesto en la n
 Los requisitos establecidos en este apartado deberán reunirse a 31 de diciembre de 2023. Excepcionalmente, en el caso de solicitantes de estatuto de refugiado o protección subsidiaria, el permiso de residencia legal podrá obtenerse hasta el 30 de junio de 2024. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-12 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -685,10 +639,6 @@ justificar un alquiler de piso compartido.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-13 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Cuando el régimen de custodia de los hijos sea el de custodia compartida, se considerarán miembros computables el padre y la madre del solicitante de la beca, sus hijos comunes y los ascendientes del padre y de la madre que justifiquen su residencia en el mismo domicilio que los anteriores con el certificado municipal correspondiente. Esta consideración se mantendrá también en el caso de que el solicitante haya alcanzado la mayoría de edad, siempre que existan indicios 
@@ -730,10 +680,6 @@ c) 1.811,00 euros por cada hermano o hijo del solicitante o el propio solicitant
 de 4.000,00 euros. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-14 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -788,10 +734,6 @@ diciembre de 2002, los valores catastrales se multiplicarán por los coeficiente
 - Por 0,25 los revisados en 2008. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-15 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -848,10 +790,6 @@ a) Ingresos procedentes de actividades económicas en estimación directa o en e
 objetiva. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-16 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -923,8 +861,6 @@ la siguiente fórmula:
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 V = Valor resultante de la ponderación de la nota obtenida en cada asignatura. 
@@ -981,10 +917,6 @@ la cuantía de la beca con el 50 por ciento restante.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-18 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 3. El número mínimo de créditos fijado en los párrafos anteriores en que el alumno debe quedar 
@@ -1022,10 +954,6 @@ matriculados correspondientes a la titulación de grado.
 1. Para la concesión de beca a quienes se matriculen por primera vez de primer curso de estudios de grado y, estando en posesión del título de bachillerato accedan a la universidad mediante  la Evaluación del Bachillerato para Acceso a la Universidad, se requerirá una nota de 5,00 puntos en la nota de acceso a la universidad con exclusión de la calificación obtenida en las pruebas de las materias de opción del bloque de las asignaturas troncales es decir, dicha nota de acceso se calculará conforme a la fórmula 0,6 NMB + 0,4 EBAU. En las demás vías de acceso a 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-19 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1083,10 +1011,6 @@ concederá la beca de matrícula.
 los años establecidos en el apartado primero de este artículo. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-20 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1150,10 +1074,6 @@ se indican a continuación.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-21 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## 1. Número de créditos de matrícula. 
@@ -1190,10 +1110,6 @@ la cuantía de la beca hasta el total que le hubiese correspondido.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-22 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 c) El número mínimo de créditos fijado en los párrafos anteriores en que el estudiante debe quedar matriculado en el segundo curso de máster de duración superior a 60 créditos no será exigible, por una sola vez, en el caso de los estudiantes a los que, para finalizar sus estudios, les reste un número de créditos inferior a dicho número mínimo, siempre que no haya disfrutado de la condición de becario durante más años de los previstos en el artículo 31. Si dichos créditos se cursan en un cuatrimestre/semestre, la cuantía de la beca será del cincuenta por ciento de la cantidad que le hubiese correspondido con excepción de la beca de matrícula y la cuantía variable 
@@ -1229,10 +1145,6 @@ Los estudiantes de segundo curso de másteres deberán acreditar una nota media 
 3. En todo caso, el número mínimo de créditos en que debió estar matriculado en el curso 2023-2024 o, en su defecto, en el último año cursado será el que, para cada caso, se indica en el artículo anterior. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-23 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1296,10 +1208,6 @@ decimal español.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-24 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 9. Cuando el acceso al máster se produzca desde titulaciones de sólo segundo ciclo, la nota media se hallará teniendo en cuenta también las calificaciones obtenidas en el primer ciclo anterior. 
@@ -1362,10 +1270,6 @@ empleado para su superación.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-25 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 4ª. Únicamente cuando no existan calificaciones numéricas, las calificaciones obtenidas se 
@@ -1426,10 +1330,6 @@ formación en el centro.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-26 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Artículo 33. _Enseñanzas de grado superior de formación profesional, de artes plásticas y diseño y_ 
@@ -1484,10 +1384,6 @@ No se podrá disfrutar de beca durante más años de los establecidos en el plan
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-27 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Quienes cursen enseñanzas íntegramente no presenciales o utilicen ofertas de matrícula parcial o específica para personas adultas podrán obtener la beca durante un año más de los 
@@ -1538,10 +1434,6 @@ acreditar haber superado todas las asignaturas del curso anterior, con excepció
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-28 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Los estudiantes de segundos y posteriores cursos organizados por módulos deberán acreditar haber superado en el curso anterior al menos un número de módulos que supongan el ochenta y cinco por ciento de las horas totales del curso en que hubieran estado matriculados. 
@@ -1583,10 +1475,6 @@ Para obtener beca en las enseñanzas a que se refiere este artículo, se estable
 Para obtener beca en estas enseñanzas el solicitante deberá matricularse de curso completo, sin perjuicio de las convalidaciones y exenciones a que tenga derecho. Para estos estudios podrá concederse la beca básica y la cuantía variable mínima. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-29 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1654,10 +1542,6 @@ variable mínima.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-30 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## 2º. Carga lectiva superada. 
@@ -1720,10 +1604,6 @@ g) Proceder al reintegro de los fondos en los casos previstos en la normativa vi
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-31 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## Artículo 41. _Control de las administraciones y de las universidades_ . 
@@ -1767,10 +1647,6 @@ identidad, clases y cuantía de la beca concedida y centro en el que cursan los 
 2. A través de las secretarías de los centros docentes, los citados órganos y universidades comprobarán que los mencionados estudiantes han destinado la beca para la finalidad para la que fue concedida, requiriéndose, a estos efectos, que los estudiantes universitarios superen el cincuenta por ciento de los créditos matriculados en la convocatoria ordinaria o extraordinaria. En el supuesto de enseñanzas de la rama de ciencias y de la rama de enseñanzas técnicas, el 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-32 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1830,10 +1706,6 @@ establecidos, o no los acrediten debidamente.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-33 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 3. La colaboración entre las administraciones educativas correspondientes y las universidades con otros órganos de las administraciones públicas podrá hacerse extensiva a las tareas de 
@@ -1882,10 +1754,6 @@ de 21 de julio, por el que se aprueba su Reglamento.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-34 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## CAPÍTULO VII 
@@ -1929,10 +1797,6 @@ solidaria lo siguiente:
 - b) Que todos los datos incorporados a la solicitud se ajustan a la realidad. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-35 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1991,10 +1855,6 @@ Finalizado el plazo de solicitud, las unidades de gestión de becas comenzarán 
 actuaciones, descargándose la totalidad de las solicitudes presentadas. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-36 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2060,10 +1920,6 @@ presente artículo podrán estructurarse en subcomisiones o grupos de trabajo.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-37 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 5. De las reuniones celebradas por los órganos a que se refieren los párrafos anteriores, empezando por la de su constitución, se levantará acta, que será remitida a la Dirección General 
@@ -2104,10 +1960,6 @@ cumplimiento de los requisitos económicos establecidos en la presente convocato
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-38 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 solicitud haya resultado propuesta para su desestimación, se informará al solicitante de la 
@@ -2147,10 +1999,6 @@ Formación Profesional y Deportes el importe a que ascienden las cuantías fijas
 correspondiente identificándose como interesados en el expediente con su NIF/NIE. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-39 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2202,10 +2050,6 @@ siguientes extremos:
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-40 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 5. Conocido el coste de las referidas cuantías y, por tanto, el importe no invertido en las mismas, el Secretario de Estado de Educación del Ministerio de Educación, Formación Profesional y Deportes y el Secretario General de Universidades, del Ministerio de  Ciencia, Innovación y Universidades dictarán resolución asignando el porcentaje de dicho importe que se destinará a la cuantía variable que corresponda, por una parte,  a los estudiantes universitarios, de enseñanzas artísticas superiores y  de estudios religiosos superiores y, por otra, a los demás estudiantes no universitarios. El Ministerio de Educación, Formación Profesional y Deportes distribuirá los referidos montantes entre todos los becarios que tengan derecho a la cuantía variable conforme a lo dispuesto en esta convocatoria, con excepción de quienes ya hayan percibido la cuantía variable mínima. Dicha distribución se efectuará mediante la aplicación de la fórmula recogida en el artículo 10 de esta Resolución que asignará a cada uno de los becarios el importe de cuantía variable que 
@@ -2247,10 +2091,6 @@ podrán requerir cautelarmente el abono de dichos precios públicos a quienes no
 requisitos establecidos en esta convocatoria. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-41 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2304,10 +2144,6 @@ universidades y a las comunidades autónomas firmantes del convenio a que se ref
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-42 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 este artículo en concepto de precios públicos por servicios académicos de sus estudiantes 
@@ -2360,10 +2196,6 @@ administraciones públicas en sus respectivos ámbitos de competencia.
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-43 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 3. No se considerarán incompatibles las becas de esta convocatoria con las Becas- 
@@ -2401,10 +2233,6 @@ cuantía superior a la concedida.
 recursos administrativos o contenciosos, de incidencias que hayan postergado su concesión y de 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-44 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2464,8 +2292,6 @@ En el caso de que la solicitud de beca sea formulada por personas que formen par
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 propio solicitante quien deba aportar información fehaciente sobre la situación económica de renta 
@@ -2513,10 +2339,6 @@ En los supuestos de becas denegadas por motivos académicos en los que, a la vis
 prevista en esta convocatoria, en el caso de estudios universitarios. 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-46 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2566,10 +2388,6 @@ Lo dispuesto en esta Resolución para los estudiantes no universitarios no será
 
 **==> picture [40 x 40] intentionally omitted <==**
 
-47 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 por el que se completa el traspaso de Servicios del Estado a la Comunidad Autónoma del País 
@@ -2607,8 +2425,4 @@ EL SECRETARIO DE ESTADO DE EDUCACIÓN Orden EFP/43/2021, de 21 de enero (BOE del
 José Manuel Bar Cendón 
 
 **==> picture [40 x 40] intentionally omitted <==**
-
-48 
-
-**CSV : GEN-4da0-cf85-8491-2f33-d12b-b04e-3c41-664e DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : JOSE MANUEL BAR CENDÓN | FECHA : 13/03/2024 19:03 | Aprueba** 
 

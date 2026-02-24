@@ -1,5 +1,3 @@
-MINISTERIO DE EDUCACIÓN Y FORMACIÓN PROFESIONAL 
-
 **==> picture [57 x 60] intentionally omitted <==**
 
 ## **RESOLUCIÓN DE LA SECRETARÍA DE ESTADO DE EDUCACIÓN, POR LA QUE SE CONVOCAN BECAS DE CARÁCTER GENERAL PARA EL CURSO ACADÉMICO 2022-2023** 
@@ -27,10 +25,6 @@ Por lo demás, en esta Resolución se prevé la posibilidad de celebrar convenio
 efectivo de estas competencias. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-1 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -65,10 +59,6 @@ El importe de las becas concedidas, excluido el importe de las becas de matrícu
 La efectividad de esta cuantía adicional queda condicionada a la declaración de disponibilidad del crédito y, en su caso, a la previa aprobación de la modificación presupuestaria que proceda, con anterioridad a la resolución definitiva de la convocatoria. La mencionada declaración de disponibilidad del crédito se hará pública en el «Boletín Oficial del Estado», sin que implique apertura de plazo para presentar nuevas solicitudes ni el inicio de nuevo cómputo de plazo para resolver. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-2 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -125,10 +115,6 @@ enseñanzas:
       - g) Estudios de idiomas realizados en escuelas oficiales de titularidad de las administraciones educativas, incluida la modalidad de distancia. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-3 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -194,10 +180,6 @@ necesario para obtener la titulación de que se trate.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-4 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 En el caso de los estudiantes de universidades privadas y de centros docentes adscritos a universidades públicas y privadas que no apliquen los precios públicos oficiales aprobados por la Comunidad Autónoma, la cuantía de esta beca será igual al precio mínimo establecido por la Comunidad Autónoma en la que el solicitante curse sus estudios para un estudio con la misma 
@@ -249,10 +231,6 @@ Procederá el pago de la cuantía fija ligada a la residencia exclusivamente cua
 establecimiento similar. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-5 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -318,8 +296,6 @@ enseñanzas deportivas.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 - d)  Enseñanzas universitarias conducentes al título de grado 
@@ -374,10 +350,6 @@ Cmin = Cuantía variable mínima, que se establecerá en los reales decretos anu
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-7 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Ctotal = Importe total a distribuir de forma variable: en cada convocatoria se podrán fijar una o 
@@ -425,10 +397,6 @@ grado básico que dé acceso a estas enseñanzas.
 Para los becarios de primer curso de grado superior de formación profesional, de artes plásticas y diseño y de enseñanzas deportivas, se tendrán en cuenta a los efectos de aplicación de esta fórmula, la nota media obtenida en segundo curso de bachillerato o en la prueba o curso que dan acceso a estas enseñanzas. En el caso de los alumnos que accedan desde un ciclo 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-8 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -495,10 +463,6 @@ vez en el curso 2022-2023, en los términos previstos en el artículo 5 de esta 
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-9 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 F) Cuantía variable y distinta para los diferentes solicitantes que resultará de la ponderación de la nota media del expediente del estudiante y de su renta familiar y cuyo importe mínimo será de 
@@ -544,10 +508,6 @@ se hallen cubiertos suficientemente por servicios o fondos públicos.
 2. A las personas a que se refiere el apartado anterior no les serán de aplicación los requisitos establecidos en relación con la carga lectiva superada, la nota media obtenida ni el 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-10 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -598,10 +558,6 @@ b) Cumplir los requisitos básicos establecidos en el Real Decreto 1721/2007, de
 diciembre. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-11 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -657,10 +613,6 @@ obtenido se restarán los pagos a cuenta efectuados.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-12 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 menor, quienes tendrán la consideración de sustentadores principales de la familia. También serán miembros computables el solicitante, los hermanos solteros menores de 25 años, o los de mayor edad, cuando se trate de personas con discapacidad física, psíquica o sensorial, así como los menores en régimen de acogimiento permanente o de guarda con fines de adopción y los ascendientes de los padres que justifiquen su residencia en el mismo domicilio que los anteriores con el certificado municipal correspondiente. Para ser considerado miembro computable deberá 
@@ -702,10 +654,6 @@ casos la residencia del estudiante durante el curso con su domicilio familiar.
 diciembre de 2021. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-13 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -750,10 +698,6 @@ A partir del octavo miembro se añadirán 3.368,00 euros por cada nuevo miembro 
 de la familia. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-14 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -819,10 +763,6 @@ diciembre de 2002, los valores catastrales se multiplicarán por los coeficiente
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-15 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 - Por 0,30 los revisados en 2011. 
@@ -878,10 +818,6 @@ se deducirá el 50 por ciento del valor de los que pertenezcan a cualquier miemb
 - la familia, excluidos los sustentadores principales. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-16 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -957,8 +893,6 @@ Resolución.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Los valores resultantes de la aplicación de dicha fórmula se sumarán, siendo el resultado la 
@@ -1011,10 +945,6 @@ años de los previstos en el artículo 25.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-18 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 4. En ningún caso entrarán a formar parte de los mínimos a que se refiere este artículo los créditos correspondientes a distintas especialidades o que superen los necesarios para la obtención del título correspondiente, ni las asignaturas o créditos convalidados, adaptados o 
@@ -1050,10 +980,6 @@ matriculados correspondientes a la titulación de grado.
 selección realizará la adaptación a la referida escala que resulte procedente. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-19 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1113,10 +1039,6 @@ para un único curso académico y por una sola vez.
 7. Cuando se produzca un cambio de estudios universitarios cursados total o parcialmente con condición de becario, no podrá obtenerse ninguna beca en los nuevos estudios hasta que el 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-20 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1180,10 +1102,6 @@ Se considerará matrícula completa, la que comprenda, como mínimo, todos los c
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-21 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 considerará curso completo el número de créditos que resulte de dividir el total de los que integran el plan de estudios entre el número de años que lo componen. 
@@ -1219,10 +1137,6 @@ la cuantía de la beca hasta el total que le hubiese correspondido.
 c) El número mínimo de créditos fijado en los párrafos anteriores en que el estudiante debe quedar matriculado en el segundo curso de máster no será exigible, por una sola vez, en el caso de los estudiantes a los que, para finalizar sus estudios, les reste un número de créditos inferior a dicho número mínimo, siempre que no haya disfrutado de la condición de becario durante más años de los previstos en el artículo 31. Si dichos créditos se cursan en un cuatrimestre/semestre, la cuantía de la beca será del cincuenta por ciento de la cantidad que le hubiese correspondido 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-22 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1261,10 +1175,6 @@ Los estudiantes de segundo curso de másteres deberán acreditar una nota media 
 1. Para la concesión de beca a quienes se matriculen por primera vez de primer curso de estudios de máster, la nota media requerida se calculará con las calificaciones numéricas obtenidas por los estudiantes en la escala 0 a 10 en los créditos de que conste el plan de estudios de la titulación que les da acceso al máster. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-23 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1327,10 +1237,6 @@ La nota media se obtendrá de la suma de las calificaciones obtenidas en cada un
 asignaturas dividida por el total. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-24 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1395,10 +1301,6 @@ computarán según el siguiente baremo:
 - b) Sobresaliente = 9 puntos. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-25 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1466,10 +1368,6 @@ No obstante, se considerará matriculados en curso completo a los solicitantes d
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-26 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 continuación y que no puedan matricularse de otros módulos adicionales que pudieran sumar 
@@ -1526,10 +1424,6 @@ establecidos en el párrafo anterior.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-27 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 2. Quienes cursen el proyecto de fin de estudios que no constituya una asignatura ordinaria del plan de estudios podrán obtener beca básica y cuantía variable mínima que podrá concederse para un único curso académico y por una sola vez. Para la obtención de estas ayudas se requerirá tener totalmente superado el ciclo y haber disfrutado de la condición de becario en el curso anterior. 
@@ -1582,10 +1476,6 @@ No se concederá beca a quienes repitan curso total o parcialmente.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-28 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Se entenderá que cumplen el requisito académico para ser becarios quienes hayan repetido curso cuando tengan superadas la totalidad de las materias o módulos de los cursos anteriores a aquél para el que solicitan la beca. 
@@ -1627,10 +1517,6 @@ Para obtener beca en estas enseñanzas el solicitante deberá matricularse de cu
 No se concederá beca a quienes estén repitiendo curso. Se entenderá que cumplen el requisito académico para ser becarios quienes hayan repetido curso cuando tengan superados la totalidad de los módulos de los cursos anteriores a aquel para el que solicitan la beca. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-29 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1698,10 +1584,6 @@ materias o asignaturas del curso anterior.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-30 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 2. Número de años con condición de becario. 
@@ -1766,10 +1648,6 @@ de la beca solicitada o a la modificación o revocación de la concesión.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-31 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 3. Asimismo, dará lugar a la denegación de la beca solicitada o a la modificación o revocación de la beca concedida la ocultación de la posesión de titulaciones académicas de igual o superior 
@@ -1811,10 +1689,6 @@ en los siguientes supuestos:
 - a) Anulación de la matrícula o abandono de hecho de los estudios. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-32 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1874,10 +1748,6 @@ Artículo 45. _Reintegro_ .
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-33 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 educativas correspondientes y/o las universidades notificarán al beneficiario esta circunstancia para que proceda a la devolución al Tesoro Público y, en su caso, a la comunidad autónoma que haya financiado parcialmente el componente de beca de matrícula, de la cantidad indebidamente 
@@ -1927,10 +1797,6 @@ www.educacionyfp.gob.es
 Una vez cumplimentada la solicitud, deberá ser firmada por el interesado o su representante legal en el caso de ser menor de 18 años con cualquiera de los sistemas de firma electrónica 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-34 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -1985,10 +1851,6 @@ solidaria lo siguiente:
 - para el pago de la beca. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-35 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2045,10 +1907,6 @@ de selección de becarios con la siguiente composición:
 - b) Vicepresidente: El gerente de la universidad o persona en quien delegue. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-36 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2108,10 +1966,6 @@ efecto en los artículos 15 y siguientes de la Ley 40/2015, de 1 de octubre de R
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-37 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## Artículo 51. _Revisión de solicitudes y subsanación de defectos_ . 
@@ -2147,10 +2001,6 @@ formular alegaciones, así como del plazo y órgano ante el que deben presentars
 Asimismo, se informará del procedimiento y plazo para que los solicitantes, en su caso, modifiquen o completen alguno de los aspectos de su solicitud inicial, especialmente en lo relativo a sus circunstancias académicas. A estos efectos, la Subdirección General de Tecnologías de la Información y Comunicaciones pondrá a disposición de los interesados los datos que pudieran ser objeto de modificación. La rectificación no podrá referirse a los aspectos que hayan sido tenidos 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-38 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2196,10 +2046,6 @@ educativas.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-39 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 y las cuantías adicionales a que se refiere el artículo 2.3 con los importes adjudicados. Esta base de datos contendrá, además, la información que sea necesaria para identificar el órgano de 
@@ -2243,10 +2089,6 @@ por cualquiera de los medios admitidos en la normativa reguladora del procedimie
 corresponda. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-40 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2293,10 +2135,6 @@ con las siguientes precisiones:
 de 18,46 euros por cada crédito. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-41 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2346,10 +2184,6 @@ tributarias y frente a la Seguridad Social.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-42 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 d) La Dirección General de Planificación y Gestión Educativa requerirá a las universidades el envío de algunos expedientes de matrícula seleccionados por muestreo al objeto de comprobar 
@@ -2395,10 +2229,6 @@ del Estado (MUFACE) serán compatibles con las becas que se convocan por esta Re
 excepción de la cuantía ligada a la residencia. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-43 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2454,10 +2284,6 @@ las siguientes cuantías:
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-44 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 2. Las solicitudes de beca, que deberán ser formuladas en la forma y plazos previstos en esta 
@@ -2507,10 +2333,6 @@ Asimismo, si consultadas las bases de datos administrativas correspondientes, fa
 presentación de la documentación oportuna. 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-45 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 
 **==> picture [33 x 36] intentionally omitted <==**
 
@@ -2564,10 +2386,6 @@ trata de estudios universitarios o la beca básica si se trata de estudios no un
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-46 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 ## Artículo 65. _Convenios de colaboración._ 
@@ -2612,10 +2430,6 @@ para la aplicación de lo dispuesto en la presente Resolución.
 
 **==> picture [46 x 46] intentionally omitted <==**
 
-47 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
-
 **==> picture [33 x 36] intentionally omitted <==**
 
 Administrativa. El plazo será de dos meses y se contará desde el día siguiente a aquel en que se notifique la resolución expresa del recurso potestativo de reposición; si no hubiera resolución expresa del recurso de reposición, el plazo para interponer el recurso contencioso-administrativo será de seis meses y se contará a partir del día siguiente a aquel en que deba entenderse 
@@ -2641,8 +2455,4 @@ EL SECRETARIO DE ESTADO DE EDUCACIÓN Orden EFP/43/2021, de 21 de enero (BOE del
 Alejandro Tiana Ferrer 
 
 **==> picture [46 x 46] intentionally omitted <==**
-
-48 
-
-**CSV : GEN-e1e7-f1c9-53a8-bbfb-bca1-a291-d57c-07e4 DIRECCIÓN DE VALIDACIÓN : https://sede.administracion.gob.es/pagSedeFront/servicios/consultaCSV.htm FIRMANTE(1) : ALEJANDRO TIANA FERRER | FECHA : 10/03/2022 18:15 | Aprueba** 
 

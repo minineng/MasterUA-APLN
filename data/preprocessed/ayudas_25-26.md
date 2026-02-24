@@ -1,5 +1,3 @@
-MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES � 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [78 x 25] intentionally omitted <==**
@@ -39,8 +37,6 @@ complementa a la ya aplicable al alumnado con discapacidad igual o superior al 6
 Por lo expuesto, en aplicación de la normativa antes indicada, de la Ley 24/2005, de 18 de noviembre, de Reforma para el Impulso de la Productividad, el Real Decreto 1721/2007, de 21 de diciembre, por el que se establece el régimen de las becas y ayudas al estudio personalizadas, el Real Decreto 163/2025, de 4 de marzo, por el que se establecen los umbrales de renta y patrimonio familiar y las cuantías de las becas y ayudas al estudio para el curso 2025-2026 y se modifica el Real Decreto 1721/2007, de 21 de diciembre, y la Orden ECI/1815/2005, de 6 de junio (BOE de 15 de junio), por la que se aprueban las bases reguladoras de la concesión de becas y ayudas al 
 
 estudio por el Ministerio de Educación y Ciencia, he resuelto: 
-
-1 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -97,8 +93,6 @@ resolver.
 artísticas superiores por los precios públicos por los servicios académicos correspondientes a los estudiantes exentos de su pago por ser beneficiarios de beca se realizará con cargo al crédito 18.08.323M.482.05 y 18.08.323M.482.02, respectivamente, de los presupuestos del Ministerio de 
 
 Educación, Formación Profesional y Deportes de los ejercicios de 2025 y 2026. 
-
-2 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -161,8 +155,6 @@ concertados que tengan autorizadas enseñanzas de formación profesional.
 - español cursadas en centros españoles y con validez en todo el territorio nacional: 
 
       - a) Enseñanzas artísticas superiores. 
-
-3 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -230,8 +222,6 @@ En el caso de los estudiantes de universidades privadas y de centros docentes ad
 
 experimentalidad en una universidad pública de esa misma Comunidad Autónoma. 
 
-4 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -281,8 +271,6 @@ A estos efectos, se considerará como domicilio familiar el más próximo al cen
 aunque no coincida con el domicilio legal del solicitante. 
 
 Procederá el pago de la cuantía fija ligada a la residencia exclusivamente cuando se acrediten gastos por razón de alquiler de vivienda o de hospedaje en pensión, residencia de estudiantes o establecimiento similar. 
-
-5 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -358,8 +346,6 @@ enseñanzas deportivas.
 
    - Estudiantes de segundos y posteriores cursos: nota media obtenida en el curso anterior. 
 
-6 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -414,8 +400,6 @@ En la que,
 
 Cj= Cuantía variable a percibir por el becario. 
 
-7 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -465,8 +449,6 @@ grado básico que dé acceso a estas enseñanzas.
 Para los becarios de primer curso de grado superior de formación profesional, de artes plásticas y diseño y de enseñanzas deportivas, se tendrán en cuenta a los efectos de aplicación de esta fórmula, la nota media obtenida en segundo curso de bachillerato o en la prueba o curso que dan acceso a estas enseñanzas. En el caso de los alumnos que accedan desde un ciclo formativo de formación profesional de grado medio se tendrá en cuenta la calificación final del 
 
 ciclo. 
-
-8 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -534,8 +516,6 @@ Grado Básico esta cuantía será de 350 euros.
 - de la nota media del expediente del estudiante y de su renta familiar y cuyo importe mínimo será 
 
 de 60,00 euros. 
-
-9 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -607,8 +587,6 @@ la totalidad de los créditos señalados en los artículos 23.1 y 28.1 de esta R
 
 - de los que se haya matriculado por primera vez. 
 
-10 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -656,8 +634,6 @@ de enseñanzas deportivas: 500 horas.
 De conformidad con el artículo 4.1 del Real Decreto 1721/2007, de 21 de diciembre, para ser 
 
 beneficiario de las becas que se convocan por esta Resolución será preciso: 
-
-11 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -715,8 +691,6 @@ capítulo.
 
 cada uno de los miembros computables de la familia que obtengan ingresos de cualquier naturaleza, calculadas según se indica en los apartados siguientes y de conformidad con la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas aplicable conforme a 
 
-12 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -767,8 +741,6 @@ de que subsiste la situación familiar preexistente.
 
 3. En los supuestos en los que el solicitante de la beca sea un menor en situación de acogimiento, se aplicará a la familia de acogida lo dispuesto en los párrafos anteriores. Cuando se trate de un mayor de edad tendrá la consideración de no integrado en la unidad familiar, a estos 
 
-13 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -816,8 +788,6 @@ e) El 20 % de la renta familiar cuando el solicitante sea huérfano absoluto y m
 f) 500,00 euros por pertenecer el solicitante a una familia monoparental. A estos efectos, se entenderá por familia monoparental la constituida por un solo adulto, que sea el único sustentador de la familia, que conviva con uno o más hijos menores de 25 años o de mayor edad, cuando se trate de personas con discapacidad física, psíquica o sensorial, o con uno o más menores en 
 
 régimen de acogimiento familiar permanente o de guarda con fines de adopción a su cargo. 
-
-14 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -887,8 +857,6 @@ En los inmuebles enclavados en la Comunidad Foral de Navarra, el valor catastral
 
 multiplicará en todo caso por 0,50. 
 
-15 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -928,8 +896,6 @@ suma de los ingresos que se indican a continuación obtenida por el conjunto de 
 - objetiva. 
 
 b) Ingresos procedentes de una participación de los miembros computables desarrolladas a través de entidades sin personalidad jurídica o cualquier otra clase de entidad jurídica, una vez aplicado a los ingresos totales de las actividades el porcentaje de participación en las mismas. 
-
-16 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -1005,8 +971,6 @@ la siguiente fórmula:
 
 V = Valor resultante de la ponderación de la nota obtenida en cada asignatura. 
 
-17 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 P = Puntuación de cada asignatura. 
@@ -1069,8 +1033,6 @@ la cuantía de la beca con el 50 por ciento restante.
 
 matriculado en el curso para el que solicita la beca no será exigible, por una sola vez, en el caso de los estudiantes a los que, para finalizar sus estudios, les reste un número de créditos inferior a 
 
-18 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1114,8 +1076,6 @@ matriculados correspondientes a la titulación de grado.
 1. Para la concesión de beca a quienes se matriculen por primera vez de primer curso de 
 
 estudios de grado y, estando en posesión del título de bachillerato accedan a la universidad mediante la PAU, se requerirá una nota de 5,00 puntos en la calificación de acceso a la universidad, es decir, dicha nota de acceso se calculará conforme a la fórmula 0,6 NMB + 0,4 PAU. A los efectos de esta convocatoria, la nota de la PAU, de conformidad con la normativa que resulta de aplicación, tendrá en cuenta las calificaciones obtenidas en dicha prueba en las materias comunes y específicas obligatorias de modalidad de 2º de Bachillerato. En las demás vías de acceso a la universidad se requerirá haber obtenido 5,00 puntos en la prueba o enseñanza que permita el acceso a la universidad. En aquellos casos excepcionales en los que la calificación 
-
-19 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -1194,8 +1154,6 @@ universidad de mayores de 25 años impartido por las universidades públicas, la
 
 condición de becario, no podrá obtenerse ninguna beca en los nuevos estudios hasta que el 
 
-20 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1258,8 +1216,6 @@ se indican a continuación.
 
 Se considerará matrícula completa, la que comprenda, como mínimo, todos los créditos que integren el curso completo de esa doble titulación conforme al plan de estudios establecido. En el caso de que el estudiante esté matriculado de créditos que correspondan a distinto curso, se 
 
-21 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1297,8 +1253,6 @@ b) En aquellos casos en los que, en virtud de la normativa propia de la Universi
 la cuantía de la beca hasta el total que le hubiese correspondido. 
 
 c) El número mínimo de créditos fijado en los párrafos anteriores en que el estudiante debe quedar matriculado en el segundo curso de máster de duración superior a 60 créditos no será exigible, por una sola vez, en el caso de los estudiantes a los que, para finalizar sus estudios, les reste un número de créditos inferior a dicho número mínimo, siempre que no haya disfrutado de la condición de becario durante más años de los previstos en el artículo 31. Si dichos créditos se cursan en un cuatrimestre/semestre, la cuantía de la beca será del cincuenta por ciento de la 
-
-22 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -1351,8 +1305,6 @@ estudios de máster, la nota media requerida se calculará con las calificacione
 2. Para la concesión de beca a quienes se matriculen de segundo curso, la nota media 
 
 requerida será la calificación numérica obtenida en la escala 0 a 10 en el curso anterior, 
-
-23 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -1424,8 +1376,6 @@ asignaturas dividida por el total.
 
 - universitario durante los años de que conste el plan de estudios. 
 
-24 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1496,8 +1446,6 @@ empleado para su superación.
 
 calculará dividiendo el total de puntos obtenidos entre el número total de asignaturas. 
 
-25 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1558,8 +1506,6 @@ los requisitos académicos exigidos en esta Resolución.
 
 No obstante, se considerará matriculados en curso completo a los solicitantes de beca para cursar estudios de formación profesional de grado superior a los que se les haya convalidado alguno o algunos de los módulos de formación profesional de grado medio a que se refiere el artículo 3.2 y 3.6 del Real Decreto 1085/2020, de 9 de diciembre, por el que se establecen convalidaciones de módulos profesionales de los títulos de Formación Profesional del sistema educativo español y las medidas para su aplicación, y se modifica el Real Decreto 1147/2011, de 29 de julio, por el que se establece la ordenación general de la formación profesional del sistema 
 
-26 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1618,8 +1564,6 @@ establecidos en esta Resolución.
 
 Quienes utilicen la oferta específica de personas adultas, bachillerato nocturno organizado en más de dos años u oferta de matrícula parcial, podrán también obtener la beca siempre que se 
 
-27 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1676,8 +1620,6 @@ Artículo 35. _Enseñanzas de idiomas._
 
 - requisitos: 
 
-28 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1723,8 +1665,6 @@ Los requisitos necesarios para la obtención de beca en los estudios de máster 
 ## 2º. Demás estudios. 
 
 Los requisitos necesarios para la obtención de beca en las demás enseñanzas artísticas superiores, así como en los estudios religiosos superiores organizados por créditos serán los 
-
-29 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -1791,8 +1731,6 @@ como rendimiento académico que debe cumplir el solicitante para obtener beca en
 ## **Verificación y control de las becas** 
 
 Artículo 40. _Obligaciones de los beneficiarios_ . 
-
-30 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -1862,8 +1800,6 @@ convocatoria.
 
 2. A estos efectos, los órganos colegiados de selección de becarios verificarán la concurrencia 
 
-31 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1922,8 +1858,6 @@ la beca de matrícula.
 
 por las comisiones de selección de becarios correspondientes el nombre, apellidos y demás datos identificativos que se requieran de los becarios incursos en cualquiera de las situaciones a que se refiere el punto anterior. 
 
-32 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -1974,8 +1908,6 @@ entidades colaboradoras.
 
 Tanto el acuerdo de inicio como la resolución de reintegro o sobreseimiento del expediente, en su caso, serán notificados por vía telemática en la sede electrónica del Ministerio de Educación, 
 
-33 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2017,8 +1949,6 @@ mayo, de Educación.
 3. Los solicitantes que tengan derecho a alguna de las deducciones en la renta familiar, de conformidad con lo dispuesto en el artículo 18 de esta Resolución o quienes sean titulares o partícipes de las actividades económicas a que se refiere el artículo 20.3 deberán cumplimentar 
 
 los datos correspondientes del modelo de solicitud. 
-
-34 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -2083,8 +2013,6 @@ anterior, aunque dicho plazo no coincida con el plazo de matrícula correspondie
 después de transcurrido dicho plazo. 
 
 En estos casos, las solicitudes se presentarán directamente en las comunidades autónomas o en las universidades en las que corresponda realizar los estudios para los que se solicita la beca y los órganos colegiados de selección atenderán, para la concesión o denegación de la beca solicitada a la nueva situación económica familiar sobrevenida. Para que esta nueva situación económica familiar pueda ser tenida en cuenta, será preciso que el solicitante exponga y acredite 
-
-35 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -2154,8 +2082,6 @@ También podrán formar parte de la comisión aquellas otras personas o represen
 
 número no superior a tres, cuya presencia estimase necesaria la presidencia de la comisión. 
 
-36 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2218,8 +2144,6 @@ personales y familiares necesarios para la comprobación de la renta y los eleme
 
 efectuarlo. 
 
-37 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2263,8 +2187,6 @@ otras alegaciones y pruebas que los aducidos por el interesado.
 10. Antes del 5 de diciembre de 2025, las comunidades autónomas que hayan suscrito el convenio a que se refiere el artículo 65 de esta Resolución, comunicarán al Ministerio de Educación, Formación Profesional y Deportes el importe a que ascienden las cuantías fijas 
 
 adjudicadas. 
-
-38 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -2316,8 +2238,6 @@ siguientes extremos:
 
 peticiones de datos adicionales, serán notificados por vía telemática en la sede electrónica del 
 
-39 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2355,8 +2275,6 @@ entidades de crédito.
 Artículo 54. _Exención de los precios públicos por servicios académicos y abono a las universidades y centros que impartan las Enseñanzas Artísticas superiores_ . 
 
 1. Los estudiantes universitarios que soliciten beca podrán formalizar su matrícula sin el previo pago de los precios públicos por servicios académicos de aquellos créditos de los que se matriculen por primera vez. 
-
-40 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -2408,8 +2326,6 @@ Conforme a lo dispuesto en el artículo 19.3 de la Ley 38/2003, de 17 de noviemb
 
 curso 2025-2026. 
 
-41 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2447,8 +2363,6 @@ c) Asimismo, las universidades y los centros que impartan enseñanzas artística
 d) La Dirección General de Planificación y Gestión Educativa requerirá a las universidades y los centros que impartan enseñanzas artísticas superiores, o entidades en que se integren, el envío de algunos expedientes de matrícula seleccionados por muestreo al objeto de comprobar 
 
 los datos relativos a la matrícula de los estudiantes beneficiarios de beca. 
-
-42 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -2514,8 +2428,6 @@ la Seguridad Social para la realización de un período de formación o práctic
 
 - beca incompatible será causa de reintegro. 
 
-43 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2568,8 +2480,6 @@ las siguientes cuantías:
 
 - menor y que hubiera tenido la moneda respectiva el primer día hábil de 2025. 
 
-44 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2619,8 +2529,6 @@ presentación de la documentación oportuna.
 ## Artículo 60. _Enseñanzas técnicas_ . 
 
 Bajo la expresión «enseñanzas técnicas» que aparece en esta Resolución se incluyen todos los estudios que, bajo esta misma rúbrica, recoge el Real Decreto 1954/1994, de 30 de septiembre. 
-
-45 
 
 **==> picture [17 x 91] intentionally omitted <==**
 
@@ -2674,8 +2582,6 @@ trata de estudios universitarios o la beca básica si se trata de estudios no un
 
 1. Mediante los oportunos convenios de colaboración con el Ministerio de Educación, Formación Profesional y Deportes y en los términos establecidos en los mismos, las comunidades autónomas podrán realizar, respecto de las becas que se convocan por la presente Resolución, 
 
-46 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2720,8 +2626,6 @@ para la aplicación de lo dispuesto en la presente Resolución.
 
 presuntamente desestimado el recurso de reposición. 
 
-47 
-
 **==> picture [17 x 91] intentionally omitted <==**
 
 **==> picture [39 x 40] intentionally omitted <==**
@@ -2743,6 +2647,4 @@ la dirección electrónica https://sede.educacion.gob.es.
 EL SECRETARIO DE ESTADO DE EDUCACIÓN Orden EFP/43/2021, de 21 de enero (BOE del 26) 
 
 Abelardo de la Rosa Díaz 
-
-48 
 

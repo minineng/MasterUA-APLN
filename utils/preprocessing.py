@@ -5,9 +5,9 @@ import os
 import re
 
 def pdf_process(input_file, output_file):
-    print(f"Processing {input_file}")
-    md_text = pymupdf4llm.to_markdown(input_file)
+    md_text = pymupdf4llm.to_markdown(input_file, footer=False, header=False, show_progress=True)
     pathlib.Path(output_file).write_bytes(md_text.encode())
+    print(f"Processed {input_file} -> {output_file}")
 
 
 def run_preprocessing(input_folder="corpus", output_folder="preprocessed"):
@@ -23,7 +23,8 @@ def run_preprocessing(input_folder="corpus", output_folder="preprocessed"):
         if file.endswith(".pdf"):
             print(f"Processing {file}")
             input_file = os.path.join(input_folder, file)
-            output_file = f"{output_folder}/{file.replace('.pdf', '.md')}"
+            filename = file.replace('.pdf', '')
+            output_file = os.path.join(output_folder, f"{filename}.md")
             if os.path.exists(output_file):
                 print(f'Skipping {input_file} as {output_file} already exists.')
                 continue
@@ -49,6 +50,8 @@ REMOVE_LINE_PATTERNS = [
     r"^\s*\d+\s*$",
     r"^BOLET[IÍ]N OFICIAL DEL ESTADO",
     r"^Núm\.\s*\d+",
+    r"^\*\*==>.*<==\*\*",
+    r"^\*\*CSV.*"
 ]
 
 def clean_markdown_text(text: str, keep_title: bool = True) -> str:
@@ -111,6 +114,7 @@ def clean_markdown_file(input_md_path: str, output_md_path: str) -> None:
 
     with open(output_md_path, "w", encoding="utf-8") as f:
         f.write(cleaned)
+        print(f"Cleaned: {input_md_path} -> {output_md_path}")
 
 
 def run_markdown_cleaning(preprocessed_dir: str) -> None:
@@ -118,18 +122,16 @@ def run_markdown_cleaning(preprocessed_dir: str) -> None:
         print(f"Error: {preprocessed_dir} not found.")
         return
 
-    for folder in os.listdir(preprocessed_dir):
-        folder_path = os.path.join(preprocessed_dir, folder)
-        if not os.path.isdir(folder_path):
-            continue
+    for file in os.listdir(preprocessed_dir):
+        if file.endswith(".md") and not file.endswith(".clean.md"):
+            in_md = os.path.join(preprocessed_dir, file)
+            filename = file.replace('.md', '')
+            if not os.path.exists(in_md):
+                continue
 
-        in_md = os.path.join(folder_path, "text.md")
-        in_raw_md = os.path.join(folder_path, "text_raw.md")
-        if not os.path.exists(in_md):
-            continue
+            out_md = os.path.join(preprocessed_dir, f"{filename}.clean.md")
+            if os.path.exists(out_md):
+                print(f'Skipping {in_md} as {out_md} already exists.')
+                continue
 
-        os.rename(in_md, in_raw_md)
-        out_md = os.path.join(folder_path, "text.md")
-
-        clean_markdown_file(in_raw_md, out_md)
-        print(f"Cleaned: {folder} -> {out_md}")
+            clean_markdown_file(in_md, out_md)
