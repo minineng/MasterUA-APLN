@@ -1,3 +1,6 @@
+from math import nan
+from xmlrpc.client import MAXINT
+
 import pymupdf.layout  # activate PyMuPDF-Layout in pymupdf
 import pymupdf4llm
 import pathlib
@@ -6,7 +9,21 @@ import re
 
 def pdf_process(input_file, output_file):
     md_text = pymupdf4llm.to_markdown(input_file, footer=False, header=False, show_progress=True)
-    pathlib.Path(output_file).write_bytes(md_text.encode())
+    #Extra cleanup
+    # Normalize newlines
+    md_text = md_text.replace("\r\n", "\n").replace("\r", "\n")
+    # Remove picture placeholders
+    md_text = re.sub(r"\*\*==> picture .*? intentionally omitted <==\*\*", r"", md_text)
+    # Remove page number
+    md_text = re.sub(r"\n *?\d+ *?\n", r"\n", md_text)
+    # Fix title
+    md_text = re.sub(r"\n## *\*\*(.*?)\*\* *\n+## *\*\*(.*?)\*\* *\n", r"\n# **\1\2**\n", md_text)
+    # Regenerate broken sentences
+    matches = MAXINT
+    while matches != 0:
+        md_text, matches = re.subn(r"\n([^#\n][^\n]*?[\w,]) ?\n+ ?(\w)", r"\n\1 \2", md_text) 
+    
+    pathlib.Path(output_file).write_bytes(md_text.replace("\n", os.linesep).encode())
     print(f"Processed {input_file} -> {output_file}")
 
 
@@ -50,20 +67,68 @@ REMOVE_LINE_PATTERNS = [
     r"^\s*\d+\s*$",
     r"^BOLET[IÍ]N OFICIAL DEL ESTADO",
     r"^Núm\.\s*\d+",
-    r"^\*\*==>.*<==\*\*",
     r"^\*\*CSV.*"
 ]
 
-def clean_markdown_text(text: str, keep_title: bool = True) -> str:
-    text = text.replace("\r\n", "\n").replace("\r", "\n")
+# Define headers to remove entire sections
+REMOVE_SECTION_HEADERS = [
+    r"^## Artículo 41.*",
+    r"^## Artículo 42.*",
+    r"^## Artículo 46.*",
+    r"^## Artículo 66.*",
+    r"^## Artículo 67.*",
+    r"^## Artículo 69.*",
+    r"^## Artículo 70.*",
+    r"^## Artículo 71.*",
+]
 
-    # Extract title before cleaning/cropping (optional)
-    title_block = ""
-    if keep_title:
-        m = re.search(r"(?m)^(#\s+.*)$", text)
-        if m:
-            title_block = m.group(1).strip() + "\n\n"
+def clean_markdown_text(text: str) -> str:
+    """
+    Clean Markdown text:
+    - Normalize line endings
+    - Optionally keep title
+    - Remove lines matching REMOVE_LINE_PATTERNS  
+    - Remove entire sections matching header patterns
+    - Dehyphenate words split across lines
+    - Crop to relevant content
+    """
 
+    # Step 1: Remove entire sections based on headers (FIXED)
+    lines = text.split("\n")
+    keep_lines = []
+    in_remove_section = False
+    remove_header_level = 0  # Track level of section to remove (1=H1, 2=H2, etc.)
+
+    for line in lines:
+        s = line.strip()
+        
+        # Count # to determine header level
+        header_level = len(s) - len(s.lstrip('#'))
+        
+        # Check if this is a header to remove
+        is_remove_header = False
+        for pat in REMOVE_SECTION_HEADERS:
+            if header_level >= 1 and re.match(pat, s, re.IGNORECASE):
+                is_remove_header = True
+                remove_header_level = header_level  # Remember level to remove
+                break
+        
+        if is_remove_header:
+            in_remove_section = True  # Start removing
+            continue
+        
+        if in_remove_section:
+            # FIXED: Stop at header of SAME LEVEL or HIGHER
+            if header_level >= 1 and header_level <= remove_header_level:
+                in_remove_section = False  # End removal
+            continue
+        
+        keep_lines.append(line)
+
+    text = "\n".join(keep_lines)
+
+
+    # Step 2: Remove individual lines matching patterns (existing logic)
     cleaned_lines = []
     for line in text.split("\n"):
         s = line.strip()
@@ -84,10 +149,10 @@ def clean_markdown_text(text: str, keep_title: bool = True) -> str:
 
     text2 = "\n".join(cleaned_lines)
 
-    # Dehyphenation: "gene-\nral" -> "general"
+    # Step 3: Dehyphenation: "gene-\nral" -> "general"
     text2 = re.sub(r"(\w)-\n(\w)", r"\1\2", text2)
 
-    # Crop to relevant start
+    # Step 4: Crop to relevant start (existing logic)
     start_idx = None
     for pat in START_MARKERS:
         m = re.search(pat, text2)
@@ -97,11 +162,11 @@ def clean_markdown_text(text: str, keep_title: bool = True) -> str:
     if start_idx is not None:
         text2 = text2[start_idx:]
 
+    # Step 5: Normalize whitespace
     text2 = re.sub(r"\n{3,}", "\n\n", text2).strip() + "\n"
 
-    if keep_title and title_block:
-        return title_block + text2
     return text2
+
 
 def clean_markdown_file(input_md_path: str, output_md_path: str) -> None:
     with open(input_md_path, "r", encoding="utf-8") as f:

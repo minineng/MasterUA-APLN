@@ -17,12 +17,12 @@ def main():
     print("--- STAGE 1: PDF PREPROCESSING ---")
     run_preprocessing(CORPUS_DIR, PREPROCESSED_DIR)
     run_markdown_cleaning(PREPROCESSED_DIR)
-
+    
     extractor = Extractor()
     # 1.5 Term Scoring Analysis (Optional)
     # This step is not strictly necessary for the final dataset, but we wanted to do it to see the insights it can provide.
     run_document_term_scoring(PREPROCESSED_DIR, ADDITIONAL_ANALYSIS_DIR, extractor)
-
+    return
     # 2. Information Extraction Stage
     # This stage uses Hugging Face QA and SpaCy NER
     print("\n--- STAGE 2: NLU DATA EXTRACTION (HF + SpaCy) ---")
