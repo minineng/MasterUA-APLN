@@ -9,3 +9,4 @@ pymupdf.layout
 pymupdf4llm
 wordcloud
 matplotlib
+scikit-learn
