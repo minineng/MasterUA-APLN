@@ -1,8 +1,37 @@
 {
     "questions": {
         "año_academico": "¿A qué curso académico pertenece esta convocatoria?",
+        "enseñanzas_incluidas": "¿Qué enseñanzas o estudios están incluidos en esta convocatoria de becas?",
+        "ejercicio_renta_computable": "¿Qué ejercicio fiscal o año de ingresos se tiene en cuenta para el cálculo de la renta familiar?",
+        "fecha_limite": "¿Cuál es la fecha límite para presentar la solicitud?",
+
+        "cobertura_matricula": "¿Qué cubre la beca de matrícula y a qué estudios se aplica?",
+        "requisitos_academicos": "¿Cuáles son los requisitos académicos generales para obtener la beca (matrícula, créditos o carga lectiva mínima)?",
+
+        "cuantia_beca_basica": "¿Cuál es la cuantía de la beca básica?",
         "cuantia_renta": "¿Cuál es la cuantía de la beca fija ligada a la renta?",
+        "cuantia_variable_minima": "¿Cuál es la cuantía mínima de la parte variable de la beca?",
         "cuantia_residencia": "¿Cuál es la cuantía de la beca fija ligada a la residencia?",
-        "fecha_limite": "¿Cuál es la fecha límite para presentar la solicitud?"
+        
+        "nota_media_minima": "¿Cuál es la nota requerida para las cuantías de excelencia?",
+        "excelencia_academica": "¿Cuál es la cuantía de la beca fija ligada a la excelencia?",
+        "cuantia_excelencia_8_00_8_49": "¿Cuál es la cuantía por excelencia académica para nota media entre 8,00 y 8,49?",
+        "cuantia_excelencia_8_50_8_99": "¿Cuál es la cuantía por excelencia académica para nota media entre 8,50 y 8,99?",
+        "cuantia_excelencia_9_00_9_49": "¿Cuál es la cuantía por excelencia académica para nota media entre 9,00 y 9,49?",
+        "cuantia_excelencia_9_50_o_mas": "¿Cuál es la cuantía por excelencia académica para nota media igual o superior a 9,50?",
+
+        "umbral_matricula": "¿Qué umbral de renta se exige para obtener la beca de matrícula?",
+        "umbral_renta": "¿Qué umbral de renta se exige para obtener la beca fija ligada a la renta?",
+        "umbral_residencia": "¿Qué umbral de renta se exige para obtener la beca fija ligada a la residencia?",
+        "umbral_variable": "¿Qué umbral de renta se exige para obtener la parte variable?",
+
+        "compensacion_insularidad": "¿Existe compensación por insularidad y cuáles son sus cuantías?",
+        "incremento_discapacidad": "¿Cómo se incrementan las cuantías de la beca en caso de discapacidad y en qué porcentajes?",
+        "exencion_victimas": "¿Qué medidas especiales se aplican a víctimas de violencia de género o violencia sexual?",
+
+        "como_solicitar": "¿Cómo y dónde se presenta la solicitud de beca?",
+        "plazo_solicitud_inicio": "¿Cuál es la fecha de inicio del plazo de solicitud?",
+        "plazo_solicitud_fin": "¿Cuál es la fecha de fin del plazo de solicitud?"
+
     }
 }
