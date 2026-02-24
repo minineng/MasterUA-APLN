@@ -12,13 +12,12 @@ class Extractor():
 
     QUESTION_CONFIG_PATH = "data/config/questions.json"
     RE_CUANTIA = re.compile(r"\d+,?\d*")
+    CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
 
     class Tokenizer:
-        CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
         def __init__(self, nlp, custom_stops = []):
             self.nlp = nlp
-            self.stopwords = self.CUSTOM_STOPWORDS
-            self.stopwords.union(custom_stops)
+            self.stopwords = custom_stops
             
         def __call__(self, text):
             doc = self.nlp(text)
@@ -59,7 +58,7 @@ class Extractor():
         if not text:
             return ""
 
-        tokenizer = self.get_tokenizer()
+        tokenizer = self.get_tokenizer(self.CUSTOM_STOPWORDS)
         return " ".join(tokenizer(text))
 
     def extract_scholarship_data(self, file_path):
