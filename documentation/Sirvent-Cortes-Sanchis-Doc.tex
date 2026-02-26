@@ -29,6 +29,119 @@
 
 \section{Evaluation}
 
+In this stage is where we use the information extracted in the previous stage to generate a summary of each document, trying to capture all the information possible and focus it in a clear way.
+During the development, we decided to separate this stage from the initial one, so to be able to run it independently, as the information extraction is a very time-consuming process.
+
+\subsection{Model Election}
+
+The first step of this stage is to choose the language generation model that we will use to generate the summaries. 
+We were thinking on using Ollama to generate the summaries but we tried to keep everything "within" Hugging-Face.
+Our first choices were focused on lightweight models only trained in spanish, these were the ones we tested (with the issues we found):
+
+\begin{itemize}
+
+\item \textbf{SEBIS/legal\_t5\_small\_summ\_es} \\
+\textit{Objective:} Small T5 model fine-tuned for legal text summarization in Spanish. \\
+\textit{Issue encountered:} Not instruction-following and unable to reliably interpret structured JSON inputs.
+
+\item \textbf{mrm8488/bert2bert\_shared-spanish-finetuned-summarization} \\
+\textit{Objective:} Encoder-decoder model based on BETO fine-tuned for Spanish news summarization (MLSUM). \\
+\textit{Issue encountered:} Technical instability on macOS (meta tensor errors) and poor adaptation to structured dictionary inputs.
+
+\item \textbf{Narrativa/bsc\_roberta2roberta\_shared-spanish-finetuned-mlsum-summarization} \\
+\textit{Objective:} RoBERTa2RoBERTa model trained for abstractive news summarization in Spanish. \\
+\textit{Issue encountered:} Designed for continuous narrative text rather than structured JSON data.
+
+\end{itemize}
+
+After having little success with the previous models, we decided to try multilingual models (with spanish support) and we also removed our requirement to have it lightweight.
+We thought on using instruction-tuned, as they work better for transforming structured JSON inputs into coherent narrative text (they are explicitly trained to interpret task-specific instructions rather than summarize).
+
+\begin{itemize}
+
+\item \textbf{google/flan-t5-small} \\
+\textit{Objective:} Instruction-tuned multilingual model capable of following prompts and generating Spanish text. \\
+\textit{Issue encountered:} Limited coherence and coverage when handling long or complex JSON inputs.
+
+\item \textbf{Qwen/Qwen2.5-3B-Instruct (Selected Model)} \\
+\textit{Objective:} Multilingual instruction-following model optimized for structured input understanding and coherent text generation. \\
+\textit{Issue encountered:} Higher computational requirements compared to smaller summarization models.
+
+\end{itemize}
+
+Finally, we decided to use the Qwen2.5-3B-Instruct model, as it was the one that generated the best summaries and was able to understand better the structured input without being "too big" or too slow.
+
+\subsection{Prompt Used}
+
+The generation stage relies on a single instruction-based prompt designed to transform the structured JSON output into a fluent, article-style text in Spanish. The model is explicitly instructed to behave as a public policy writer and to produce a coherent narrative description of the scholarship without mentioning the JSON structure or using bullet points. 
+
+The prompt enforces coverage of key elements (academic year, target studies, financial components, income thresholds, deadlines, and special conditions) while explicitly prohibiting hallucinations or the addition of information not present in the input. This design ensures that the generated text remains faithful to the extracted structured data while adopting a natural journalistic style.
+
+The exact prompt used in the system is shown below:
+
+\begin{verbatim}
+Eres un redactor especializado en convocatorias públicas.
+A partir del siguiente JSON, redacta un texto informativo en español 
+como si fuera un artículo explicando en qué consiste la beca.
+
+El texto debe:
+- Explicar el curso académico al que corresponde.
+- Indicar a qué enseñanzas o estudios se dirige.
+- Describir las cuantías principales (renta, residencia, básica, 
+  variable, excelencia si existe).
+- Mencionar los umbrales de renta si aparecen.
+- Explicar los plazos de solicitud.
+- Incluir condiciones especiales (discapacidad, insularidad, víctimas) 
+  si están presentes.
+
+No inventes información.
+No añadas datos que no estén en el JSON.
+No menciones el JSON ni uses formato estructurado.
+Redacta un texto fluido de entre 8 y 15 líneas.
+
+JSON:
+{json_text}
+
+Artículo:
+\end{verbatim}
+
+\subsection{Model Evaluation}
+
+The generation stage was evaluated using the structured JSON dataset as input and comparing the produced summaries across all academic years. 
+The main differences observed between the tested models were related to their ability to interpret structured JSON inputs and transform them into coherent narrative text, as well as their stability in a local environment.
+
+Finally, the selected model (Qwen2.5-3B-Instruct) demonstrated solid instruction-following capabilities and good narrative quality, the only caveat was the generation length as we has several issues with truncation when the generated text was too long, so we had to adjust the generation parameters to ensure that the output remained within a reasonable length while still capturing all relevant information.
+
+The main observations are summarized below.
+
+\subsubsection{Strengths}
+
+\begin{itemize}
+    \item Produces fluent, coherent article-style texts in Spanish.
+    \item Correctly introduces the academic year and overall purpose of the scholarship.
+    \item Integrates multiple financial components (income-linked, residence-linked, basic and variable amounts) into a unified narrative.
+    \item Includes excellence-related bonuses and special conditions (e.g., disability increments) when clearly present in the JSON.
+    \item Transforms structured numerical values into readable natural language without relying on bullet-point formatting.
+    \item Maintains consistent tone and structure across all academic years.
+\end{itemize}
+
+\subsubsection{Limitations and Areas for Improvement}
+
+\begin{itemize}
+    \item Propagates inconsistencies present in the extracted JSON (e.g., conflicting deadlines or imprecise values).
+    \item Occasionally simplifies or slightly misinterprets categorical fields when the input is ambiguous.
+    \item Does not perform logical validation across fields (e.g., checking temporal coherence between academic year and deadlines).
+    \item Output length must be carefully controlled to avoid truncation in longer summaries.
+\end{itemize}
+
 \section{Conclusion}
+
+......
+
+In the generation stage, model selection proved crucial for producing coherent and faithful summaries. Lightweight Spanish summarization models were not suitable for structured JSON inputs, whereas instruction-tuned multilingual models performed significantly better.
+
+The selected model, Qwen2.5-3B-Instruct, achieved a good balance between narrative quality and structured input understanding. However, generation quality remains strongly dependent on the accuracy of the information extraction stage, as inconsistencies in the extracted data are directly reflected in the final summaries.
+
+Overall, the generation stage successfully produced coherent and informative texts aligned with the structured input.
 
 \end{document}
