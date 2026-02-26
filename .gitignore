@@ -210,3 +210,11 @@ __pycache__/
 data/processed/*
 data/summary/*
 data/preprocessed/*
+
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.toc
+*.synctex.gz
+*.out

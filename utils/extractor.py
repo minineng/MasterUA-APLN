@@ -10,7 +10,6 @@ import time
 
 class Extractor():
 
-    QUESTION_CONFIG_PATH = "data/config/questions.json"
     RE_CUANTIA = re.compile(r"(\d{1,3}(?:\.\d{3})*(?:,\d+)) euros")
     CUSTOM_STOPWORDS = {"artículo", "capítulo", "resolución", "becas", "beca"}
 
@@ -28,12 +27,12 @@ class Extractor():
                 and token.text not in self.stopwords
             ]
             return tokens
-    def __init__(self):
+    def __init__(self, question_config_path=None):
         print("Extractor created...")
         self.nlp = None
         self.qa_model = None
         self._initialize()
-        self.question_config = read_json(self.QUESTION_CONFIG_PATH)
+        self.question_config = read_json(question_config_path)
 
     def _initialize(self):
         print("Initializing NLP models...")
@@ -62,7 +61,6 @@ class Extractor():
         return " ".join(tokenizer(text))
 
     def extract_scholarship_data(self, file_path):
-
         starting_time = time.time()
         
         # We combine NER and QA

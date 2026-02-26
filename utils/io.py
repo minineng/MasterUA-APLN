@@ -39,6 +39,14 @@ def write_csv(df, filename:str):
 def read_txt(filename:str) -> str:
     with open(filename, "r", encoding="utf-8") as f:
         return f.read()
+    
+def write_txt(content:str, filename:str):
+    folder = os.path.dirname(filename)
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(content)
 
 def write_processed(data:Dict, filename:str):
     write_json(data, f"{filename}.json")
