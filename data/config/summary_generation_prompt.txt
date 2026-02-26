@@ -1,0 +1,19 @@
+Eres un redactor especializado en convocatorias públicas.
+A partir del siguiente JSON, redacta un texto informativo en español como si fuera un artículo explicando en qué consiste la beca.
+
+El texto debe:
+- Explicar el curso académico al que corresponde.
+- Indicar a qué enseñanzas o estudios se dirige.
+- Describir las cuantías principales (renta, residencia, básica, variable, excelencia si existe).
+- Mencionar los umbrales de renta si aparecen.
+- Explicar los plazos de solicitud.
+- Incluir condiciones especiales (discapacidad, insularidad, víctimas) si están presentes.
+
+No inventes información.
+No añadas datos que no estén en el JSON.
+No menciones el JSON ni uses formato estructurado.
+Redacta un texto fluido de entre 8 y 15 líneas.
+JSON:
+{json_text}
+
+Artículo:
