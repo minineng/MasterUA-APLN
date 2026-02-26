@@ -23,7 +23,42 @@
 
 \section{Introduction}
 
+The density of legal language and the lack of an standard structured format in official public administration documents can suppose a significant barrier for some people who reads them seeking for specific information. That is the case of students who consult the Boletín Oficial del Estado (BOE) in search of information about scholarships.
+
+The objective of this project is to help them by programming an automatic summarization system: an end-to-end NLP pipeline that combines information extraction techniques with a generative text model and is able to identify and classify critical data points.
+
+During the development of this project, we avoided the use of commercial LLMs such as GPT, Llama or Gemini because we wanted to apply the NLP techniques and and the knowledge acquired in class. Throughout this report we will in dicate what techniques and models we have applied at each point and the reason for choosing them. \\
+
+\item \textbf{Source code:} \url{https://github.com/minineng/MasterUA-APLN
+}
+
 \section{Data}
+
+The corpus for this project consists of five official scholarship documents in PDF format published in the Boletín Oficial del Estado (BOE), covering the academic years from 2021-22 to 2025-26. These documents were provided by the professors, and are preprocessed to Markdown files (which will be specified in the next section) before attempting to extract the data.
+
+To transform these dense documents into stuctured data, we developed an extraction schema, using a combination of Extractive Question Answering (QA) and Named Entity Recognition (NER). As we will see in the next section, this data extraction is managed by the extractor.py module, which uses two specialized language models assigned to specific tasks:
+
+\begin{itemize}
+\item \textbf{deepset/roberta-base-squad2 (QA Model)} \\
+Responsible for the core extraction logic. By processing the cleaned Markdown text, it answers a set of predefined natural language queries, written in Spanish to match the original language. These questions are detailed in the next file: \\
+
+\url{https://github.com/minineng/MasterUA-APLN/tree/main/data/config/questions.json
+}
+
+\item \textbf{es\_core\_news\_lg (NER Model)} \\
+The es_core_news_lg (our NER) model from spaCy is used for identification of atomic entities such as dates, organizations and specific amounts. This is a large model trained on official news and media corpora, and acts as a validation layer, ensuring that the segments identified by the QA model correspond to the expected entity types.
+\end{itemize}
+
+\subsection{Structured output}
+
+The output data is saved in two different formats: CSV and JSON (but eventually we decided to use the second one to manage the summarization):
+
+\begin{itemize}
+\item \textbf{CSV Format:} \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/processed/final_scholarship_dataset.csv}
+\item \textbf{JSON format:} \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/processed/final_scholarship_dataset.json}
+\end{itemize}
+
+As a result, we obtained a large set of variables per document, ensuring every important point is represented. Those variables cover administrative data (document title, academic year, official publication dates), specific amounts for scholarships related to residence, income thresholds and academic excellence, and temporal constraints (start and end dates for the application period).
 
 \section{Architecture}
 
