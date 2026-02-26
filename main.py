@@ -3,22 +3,27 @@ from utils.preprocessing import run_preprocessing, run_markdown_cleaning
 from utils.extractor import Extractor
 from utils.io import *
 from utils.analysis import run_document_term_scoring
+from utils.summarization import SummaryGenerator
 
 DATA_DIR = "data"
+CONFIG_DIR = os.path.join(DATA_DIR,"config")
 CORPUS_DIR = os.path.join(DATA_DIR,"corpus")
 PREPROCESSED_DIR = os.path.join(DATA_DIR,"preprocessed")
 PROCESSED_DIR = os.path.join(DATA_DIR,"processed")
 ADDITIONAL_ANALYSIS_DIR = os.path.join(DATA_DIR,"analysis")
 SUMMARY_DIR = os.path.join(DATA_DIR,"summary")
 
-def main():
+DEFAULT_INFORMATION_EXTRACTION_OUTPUT = "final_scholarship_dataset"
+
+def information_extraction():
     # 1. PDF to Markdown
     # Using marker-pdf to convert original PDFs into clean Markdown
     print("--- STAGE 1: PDF PREPROCESSING ---")
     run_preprocessing(CORPUS_DIR, PREPROCESSED_DIR)
     run_markdown_cleaning(PREPROCESSED_DIR)
-    
-    extractor = Extractor()
+
+    question_config_path = os.path.join(CONFIG_DIR, "questions.json")
+    extractor = Extractor(question_config_path)
     # 1.5 Term Scoring Analysis (Optional)
     # This step is not strictly necessary for the final dataset, but we wanted to do it to see the insights it can provide.
     run_document_term_scoring(PREPROCESSED_DIR, ADDITIONAL_ANALYSIS_DIR, extractor)
@@ -47,14 +52,24 @@ def main():
     
     if final_results:
         print("\n--- STAGE 3: WRITE PROCESSED FILES ---")
-        output_filename = "final_scholarship_dataset"
-        write_processed(final_results, os.path.join(PROCESSED_DIR , output_filename))
-        
-        print(f"\n🚀 PIPELINE COMPLETE!")
-        print(f"Total documents processed: {len(final_results)}")
-        print(f"Results saved to: {output_filename}")
+        write_processed(final_results, os.path.join(PROCESSED_DIR, DEFAULT_INFORMATION_EXTRACTION_OUTPUT))
+        print(f"Information extraction complete! Results saved to: {DEFAULT_INFORMATION_EXTRACTION_OUTPUT}")
+        return DEFAULT_INFORMATION_EXTRACTION_OUTPUT
     else:
         print("\nPipeline finished but no data was extracted.")
+        return None
+
+def summary_generation(input_filename: str):
+    print("\n--- STAGE 4: SUMMARY GENERATION ---")
+    input_filename = input_filename or DEFAULT_INFORMATION_EXTRACTION_OUTPUT
+    input_path = os.path.join(PROCESSED_DIR, input_filename + ".json")
+    prompt_file_path = os.path.join(CONFIG_DIR, "summary_generation_prompt.txt")
+    summarizer = SummaryGenerator(prompt_file_path)
+    summarizer.generate_summaries_from_dataset(input_path, SUMMARY_DIR)
+    print(f"\nSummary generation complete! Results saved to: {SUMMARY_DIR}")
+    print(f"\n🚀 PIPELINE COMPLETE!")
 
 if __name__ == "__main__":
-    main()
+    output_filename = None
+    output_filename = information_extraction()
+    summary_generation(output_filename)
