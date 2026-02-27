@@ -41,17 +41,51 @@ To transform these dense documents into structured data, we developed an extract
 
 \begin{itemize}
 \item \textbf{deepset/roberta-base-squad2 (QA Model)} \\
-Responsible for the core extraction logic. By processing the cleaned Markdown text, it answers a set of predefined natural language queries, written in Spanish to match the original language. These questions are detailed in the next file: \\
-
-\url{https://github.com/minineng/MasterUA-APLN/tree/main/data/config/questions.json}
+Responsible for the core extraction logic. By processing the cleaned Markdown text, it answers a set of predefined natural language queries, written in Spanish to match the original language. These questions are detailed in the next section.
 
 \item \textbf{es\_core\_news\_lg (NER Model)} \\
 The es\_core\_news\_lg (our NER) model from spaCy is used for identification of atomic entities such as dates, organizations and specific amounts. This is a large model trained on official news and media corpora, and acts as a validation layer, ensuring that the segments identified by the QA model correspond to the expected entity types.
 \end{itemize}
 
+\subsection{Extracted queries}
+The questions we made to the QA model were focused on extracting all the information that we considered relevant for having a complete view on the grant.
+
+The JSON file that has these questions can be found here:\\ \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/config/questions.json}
+\begin{itemize}
+\item \textbf{año\_academico:} ¿A qué curso académico pertenece esta convocatoria?
+\item \textbf{enseñanzas\_incluidas:} ¿Qué enseñanzas o estudios están incluidos en esta convocatoria de becas?
+\item \textbf{ejercicio\_renta\_computable:} ¿Qué ejercicio fiscal o año de ingresos se tiene en cuenta para el cálculo de la renta familiar?
+\item \textbf{fecha\_limite:} ¿Cuál es la fecha límite para presentar la solicitud?
+\item \textbf{cobertura\_matricula:} ¿Qué cubre la beca de matrícula y a qué estudios se aplica?
+\item \textbf{requisitos\_academicos:} ¿Cuáles son los requisitos académicos generales para obtener la beca (matrícula, créditos o carga lectiva mínima)?
+\item \textbf{cuantia\_beca\_basica:} ¿Cuál es la cuantía de la beca básica?
+\item \textbf{cuantia\_renta:} ¿Cuál es la cuantía de la beca fija ligada a la renta?
+\item \textbf{cuantia\_variable\_minima:} ¿Cuál es la cuantía mínima de la parte variable de la beca?
+\item \textbf{cuantia\_residencia:} ¿Cuál es la cuantía de la beca fija ligada a la residencia?
+\item \textbf{nota\_media\_minima:} ¿Cuál es la nota requerida para las cuantías de excelencia?
+\item \textbf{excelencia\_academica:} ¿Cuál es la cuantía de la beca fija ligada a la excelencia?
+\item \textbf{cuantia\_excelencia\_8\_00\_8\_49:} ¿Cuál es la cuantía por excelencia académica para nota media entre 8,00 y 8,49?
+\item \textbf{cuantia\_excelencia\_8\_50\_8\_99:} ¿Cuál es la cuantía por excelencia académica para nota media entre 8,50 y 8,99?
+\item \textbf{cuantia\_excelencia\_9\_00\_9\_49:} ¿Cuál es la cuantía por excelencia académica para nota media entre 9,00 y 9,49?
+\item \textbf{cuantia\_excelencia\_9\_50\_o\_mas:} ¿Cuál es la cuantía por excelencia académica para nota media igual o superior a 9,50?
+\item \textbf{umbral\_matricula:} ¿Qué umbral de renta se exige para obtener la beca de matrícula?
+\item \textbf{umbral\_renta:} ¿Qué umbral de renta se exige para obtener la beca fija ligada a la renta?
+\item \textbf{umbral\_residencia:} ¿Qué umbral de renta se exige para obtener la beca fija ligada a la residencia?
+\item \textbf{umbral\_variable:} ¿Qué umbral de renta se exige para obtener la parte variable?
+\item \textbf{compensacion\_insularidad:} ¿Existe compensación por insularidad y cuáles son sus cuantías?
+\item \textbf{incremento\_discapacidad:} ¿Cómo se incrementan las cuantías de la beca en caso de discapacidad y en qué porcentajes?
+\item \textbf{exencion\_victimas:} ¿Qué medidas especiales se aplican a víctimas de violencia de género o violencia sexual?
+\item \textbf{como\_solicitar:} ¿Cómo y dónde se presenta la solicitud de beca?
+\item \textbf{plazo\_solicitud\_inicio:} ¿Cuál es la fecha de inicio del plazo de solicitud?
+\item \textbf{plazo\_solicitud\_fin:} ¿Cuál es la fecha de fin del plazo de solicitud?
+\end{itemize}
+
 \subsection{Structured output}
 
 The output data is saved in two different formats: CSV and JSON (but eventually we decided to use the second one to manage the summarization):
+
+
+
 
 \begin{itemize}
   
