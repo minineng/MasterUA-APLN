@@ -7,6 +7,7 @@
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, backgrounds, calc}
 \usepackage{pagecolor}
 \usepackage{geometry}
+\usepackage{makecell}
 \usepackage[hidelinks]{hyperref}
 
 \title{Automatic summarization system}
@@ -65,6 +66,181 @@ As a result, we obtained a large set of variables per document, ensuring every i
 \section{Architecture}
 
 The system is organized as a modular NLP pipeline with two main stages: information extraction and summary generation. In the first stage, the original PDF documents are converted into cleaned Markdown and processed with QA and NER models to populate a structured JSON representation. In the second stage, that JSON representation is passed to an instruction-tuned generative model that produces the final natural-language summary.
+
+The system is organized into two main pipelines that work sequentially:
+
+\begin{enumerate}
+\item Information Extraction Pipeline (Stages 1 and 2): Transforms raw PDF documents into structured JSON data
+\item Text Generation Pipeline (Stage 3): Converts structured data into human-readable summaries
+\end{enumerate}
+The coupling point between both pipelines is the structured JSON dataset containing extracted scholarship information.
+
+\subsection{Component details}
+
+\subsubsection{Stage 1: PDF Preprocessing}
+
+\textbf{Purpose:} Convert PDF documents into clean, structured Markdown text suitable for NLP processing.
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+Component & Technology & Description \\
+ \hline\hline
+ PDF Conversion & `pymupdf4llm` & Converts PDF to Markdown while preserving document structure \\ 
+ Text Cleaning & Custom regex & Removes page numbers, headers, footers, and irrelevant sections \\
+ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Input:} `data/corpus/*.pdf`
+
+\textbf{Output:} `data/preprocessed/*.clean.md`
+
+\subsubsection{Stage 1.5: Optional Analysis}
+
+\textbf{Purpose:} Perform TF-IDF term scoring analysis and generate word clouds for insights into document content. This stage is optional and provides additional analytical value but is not required for the main pipeline.
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+Component & Technology & Description \\
+ \hline\hline
+ Tokenization & SpaCy & Custom tokenizer with Spanish stopwords filtering \\
+ Term Scoring & TfidfVectorizer & Computes TF-IDF scores for each term per document \\
+ Visualization & WordCloud & Generates PNG word clouds from top-scoring terms \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\textbf{Process:}
+\begin{enumerate}
+\item Normalize text using the Extractor's tokenizer
+\item Build TF-IDF matrix across all documents
+\item Extract top terms per document by score
+\item Generate word cloud images for visual inspection
+\end{enumerate}
+
+\textbf{Input:} `data/preprocessed/*.clean.md`
+
+\textbf{Output:} 
+\begin{itemize}
+\item \texttt{`data/analysis/*\_analysis.json` - Term scores per document}
+\item \texttt{`data/analysis/*\_wordcloud.png` - Visual word cloud images}
+\end{itemize}
+
+\subsubsection{Stage 2: NLU Data Extraction}
+
+\textbf{Purpose:} Extract structured scholarship information using Named Entity Recognition and Question Answering models.
+
+\paragraph{Named Entity Recognition (NER)}
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+Component & Technology & Description \\
+ \hline\hline
+ Tokenization & SpaCy & Custom tokenizer with Spanish stopwords filtering \\
+ Term Scoring & TfidfVectorizer & Computes TF-IDF scores for each term per document \\
+ Visualization & WordCloud & Generates PNG word clouds from top-scoring terms \\
+ \hline
+\end{tabular}
+\end{center}
+
+\paragraph{Question Answering (QA)}
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+Component & Technology & Description \\
+ \hline\hline
+ Model & \makecell{`mrm8488/\\bert-base-spanish-wwm-cased-finetuned-spa-squad2-es`} & Spanish QA model \\
+ Task & Extractive QA & \makecell{Answer 27 predefined questions\\about scholarships} \\
+ Configuration & `data/config/questions.json` & Question templates \\
+ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Extracted Fields:}
+\begin{itemize}
+\item Academic year, target studies, deadlines
+\item Scholarship amounts (basic, income-linked, residence, variable, excellence)
+\item Income thresholds
+\item Special conditions (disability, insularity, victims)
+\end{itemize}
+
+\textbf{Input:} `data/preprocessed/*.clean.md` + `data/config/questions.json`
+
+\textbf{Output:} Structured dictionary with 29 fields per document
+
+\subsubsection{Stage 3: Summary Generation}
+
+\textbf{Purpose:} Generate human-readable article-style summaries from structured JSON data.
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+Component & Technology & Description \\
+ \hline\hline
+ Model & `Qwen/Qwen2.5-3B-Instruct` & Multilingual instruction-tuned LLM \\
+ Prompt & `data/config/summary\_generation\_prompt.txt` & Instructions for article-style generation \\
+ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Prompt Design:}
+\begin{itemize}
+\item Role: Public policy writer
+\item Format: 8-15 line article in Spanish
+\item Requirements: Cover all key fields without hallucination
+\item Constraints: No JSON mention, no bullet points
+\end{itemize}
+
+\textbf{Input:} `data/processed/final\_scholarship\_dataset.json`
+
+\textbf{Output:} `data/summary/*.summary.txt`
+
+\subsection{Technology Stack Summary}
+
+\begin{center}
+\begin{tabular}{ |c|c| } 
+ \hline
+Layer & Technologies \\
+ \hline\hline
+ \textbf{PDF Processing} & PyMuPDF, pymupdf4llm \\
+ \textbf{NLP - NER} & SpaCy (es\_core\_news\_sm) \\
+ \textbf{NLP - QA} & Hugging Face Transformers, BERT (Spanish fine-tuned) \\
+ \textbf{Text Generation} & Qwen2.5-3B-Instruct, PyTorch \\
+ \textbf{Data Processing} & Pandas, scikit-learn (TF-IDF) \\
+ \textbf{Configuration} & JSON-based question templates, text prompts \\
+ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Data Transformation Summary}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+Stage & Input Format & Output Format & Key Transformation \\
+ \hline\hline
+ Preprocessing & PDF & Markdown & Document structure extraction \\
+ Extraction & Markdown & Dictionary & Unstructured → Structured \\
+ Generation & JSON & Plain Text & Structured → Natural Language \\
+ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Architecture Diagram}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{mermaid-diagram.png}
+    \caption{Architecture Diagram}
+    \label{architecture_diagram}
+    \hfill
+\end{figure}
+
 
 \section{Evaluation}
 

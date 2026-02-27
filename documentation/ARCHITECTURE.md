@@ -1,7 +1,5 @@
 # System Architecture
 
-This document describes the architecture of the automatic summarization system, illustrating how the information extraction components interact with the automatic text generation components.
-
 ## Overview
 
 The system is organized into **two main pipelines** that work sequentially:
@@ -70,34 +68,6 @@ flowchart TB
     PROMPT --> LLM
     LLM --> GEN
     GEN --> SUMMARY
-```
-
-## Data Flow Diagram
-
-```mermaid
-flowchart LR
-    subgraph Extraction["Information Extraction"]
-        direction TB
-        E1[("PDF <br/> Original Document")]
-        E2[("Markdown <br/> Cleaned Text")]
-        E3[("JSON <br/> Structured Data")]
-        
-        E1 -->|pymupdf4llm| E2
-        E2 -->|NER + QA| E3
-    end
-
-    subgraph Generation["Text Generation"]
-        direction TB
-        G1[("JSON <br/> Structured Data")]
-        G2[("Prompt <br/> Instruction + Data")]
-        G3[("Summary <br/> Article Text")]
-        
-        G1 -->|Format| G2
-        G2 -->|LLM| G3
-    end
-
-    E3 -.->|Coupling Point| G1
-
 ```
 
 ## Component Details
@@ -195,35 +165,6 @@ flowchart LR
 
 **Output:** `data/summary/*.summary.txt`
 
-## Pipeline Orchestration
-
-**Entry Point:** `main.py`
-
-```python
-# Execution flow
-def main():
-    # Pipeline 1: Information Extraction
-    output_filename = information_extraction()
-    
-    # Pipeline 2: Summary Generation
-    summary_generation(output_filename)
-```
-
-### Stage Dependencies
-
-```mermaid
-graph TD
-    A[Stage 1: Preprocessing] --> B[Stage 2: Extraction]
-    B --> C[Stage 3: Persistence]
-    C --> D[Stage 4: Generation]
-    
-    A -.->|Optional| E[Term Scoring Analysis]
-    B --> E
-
-    classDef stageStyle fill:#f5f5f5,stroke:#333,stroke-width:2px
-    class A,B,C,D stageStyle
-```
-
 ## Technology Stack Summary
 
 | Layer | Technologies |
@@ -241,5 +182,4 @@ graph TD
 |-------|-------------|---------------|-------------------|
 | 1. Preprocessing | PDF | Markdown | Document structure extraction |
 | 2. Extraction | Markdown | Dictionary | Unstructured → Structured |
-| 3. Persistence | Dictionary | JSON/CSV | Serialization |
-| 4. Generation | JSON | Plain Text | Structured → Natural Language |
+| 3. Generation | JSON | Plain Text | Structured → Natural Language |

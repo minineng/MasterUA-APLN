@@ -2,4 +2,7 @@
 !*.md
 !*.tex
 !*.pdf
+!*.mermaid
+!*.svg
+!*.png
 !.gitignore
