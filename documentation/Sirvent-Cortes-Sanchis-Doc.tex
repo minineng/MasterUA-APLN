@@ -4,6 +4,7 @@
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, backgrounds, calc}
 \usepackage{pagecolor}
 \usepackage{geometry}
 
@@ -26,6 +27,131 @@
 \section{Data}
 
 \section{Architecture}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.9\textwidth}{!}{%
+\begin{tikzpicture}[
+    node distance=0.35cm and 0.6cm,
+    >=Stealth,
+    io/.style={cylinder, draw, shape border rotate=90, aspect=0.3, minimum height=0.7cm, minimum width=1.1cm, fill=blue!15, font=\tiny, align=center},
+    process/.style={rectangle, draw, rounded corners, minimum height=0.55cm, minimum width=1.5cm, fill=orange!20, font=\tiny, align=center},
+    subprocess/.style={rectangle, draw, minimum height=0.4cm, minimum width=1.2cm, fill=orange!10, font=\tiny, align=center},
+    subgraph/.style={rectangle, draw, dashed, rounded corners, inner sep=0.15cm, font=\tiny\bfseries},
+    arrow/.style={->, thick},
+    darrow/.style={->, thick, dashed},
+]
+
+% === INPUT SECTION ===
+\node[io] (pdf) {PDF Documents\\data/corpus/};
+\node[io, right=of pdf] (questions) {QA Config\\questions.json};
+\node[io, right=of questions] (prompt) {LLM Prompt\\summary\_prompt.txt};
+
+% Background for Input
+\begin{scope}[on background layer]
+    \node[subgraph, fill=green!5, fit=(pdf)(questions)(prompt), label=above:\textbf{Input}] (input_bg) {};
+\end{scope}
+
+% === STAGE 1: PDF Preprocessing ===
+\node[process, below=0.7cm of pdf] (pymupdf) {pymupdf4llm\\PDF to Markdown};
+
+\node[subprocess, below=0.4cm of pymupdf, xshift=-1.2cm] (preprocess1) {Section removal};
+\node[subprocess, below=0.4cm of pymupdf] (preprocess2) {Dehyphenation};
+\node[subprocess, below=0.4cm of pymupdf, xshift=1.2cm] (preprocess3) {Normalization};
+
+% Background for PREPROCESS
+\begin{scope}[on background layer]
+    \node[subgraph, fill=yellow!10, fit=(preprocess1)(preprocess2)(preprocess3), inner sep=0.1cm] (preprocess_bg) {};
+\end{scope}
+
+\node[io, below=0.5cm of preprocess_bg] (cleanmd) {Clean markdowns\\preprocessed/*.md};
+
+% Background for Stage 1
+\begin{scope}[on background layer]
+    \node[subgraph, fill=yellow!5, fit=(pymupdf)(preprocess_bg)(cleanmd), label=above:\textbf{Stage 1: PDF Preprocessing}] (stage1_bg) {};
+\end{scope}
+
+% === STAGE 1.5: Optional Analysis ===
+\node[process, right=1.5cm of pymupdf] (tfidf) {TF-IDF Vectorizer\\scikit-learn};
+\node[process, below=0.4cm of tfidf] (wc) {WordCloud Gen};
+\node[io, below=0.4cm of wc] (analysisout) {analysis/*.json\\*.png};
+
+% Background for Stage 1.5
+\begin{scope}[on background layer]
+    \node[subgraph, fill=purple!5, fit=(tfidf)(wc)(analysisout), label=above:\textbf{Stage 1.5: Optional}] (stage15_bg) {};
+\end{scope}
+
+% === STAGE 2: NLU Data Extraction ===
+\node[process, below=0.7cm of cleanmd] (ner) {SpaCy NER\\es\_core\_news\_sm};
+\node[process, right=of ner] (qa) {HF QA\\bert-base-spanish};
+\node[io, below=0.5cm of qa] (nluout) {final\_scholarship\\dataset.json/.csv};
+
+% Background for Stage 2
+\begin{scope}[on background layer]
+    \node[subgraph, fill=cyan!5, fit=(ner)(qa)(nluout), label=above:\textbf{Stage 2: NLU Data Extraction}] (stage2_bg) {};
+\end{scope}
+
+% === STAGE 3: Summary Generation ===
+\node[process, below=0.7cm of nluout, xshift=-0.8cm] (llm) {Qwen2.5-3B-Instruct\\Instruction-tuned LLM};
+
+\node[subprocess, below=0.35cm of llm, xshift=-1.2cm] (gen1) {Prompt format};
+\node[subprocess, below=0.35cm of llm] (gen2) {Text gen};
+\node[subprocess, below=0.35cm of llm, xshift=1.2cm] (gen3) {Temp: 0.3};
+
+% Background for GEN
+\begin{scope}[on background layer]
+    \node[subgraph, fill=red!10, fit=(gen1)(gen2)(gen3), inner sep=0.1cm] (gen_bg) {};
+\end{scope}
+
+% Background for Stage 3
+\begin{scope}[on background layer]
+    \node[subgraph, fill=red!5, fit=(llm)(gen_bg), label=above:\textbf{Stage 3: Summary Generation}] (stage3_bg) {};
+\end{scope}
+
+% === OUTPUT SECTION ===
+\node[io, below=0.5cm of gen_bg] (summary) {Summaries\\data/summary/};
+
+% Background for Output
+\begin{scope}[on background layer]
+    \node[subgraph, fill=green!5, fit=(summary), label=below:\textbf{Output}] (output_bg) {};
+\end{scope}
+
+% === FLOW CONNECTIONS ===
+% Input to Stage 1
+\draw[arrow] (pdf) -- (pymupdf);
+\draw[arrow] (pymupdf) -- (preprocess_bg);
+\draw[arrow] (preprocess_bg) -- (cleanmd);
+
+% Stage 1 to Stage 2
+\draw[arrow] (cleanmd) -- (ner);
+\draw[arrow] (ner) -- (qa);
+\draw[arrow] (qa) -- (nluout);
+
+% Stage 1 to Stage 1.5 (optional)
+\draw[darrow] (pymupdf.east) -- node[above, font=\tiny] {Opt} (tfidf.west);
+\draw[arrow] (tfidf) -- (wc);
+\draw[arrow] (wc) -- (analysisout);
+
+% Questions to QA
+\draw[arrow] (questions.south) -- ++(0,-0.3) -| (qa.north);
+
+% Stage 2 to Stage 3
+\draw[arrow] (nluout) -- node[right, font=\tiny] {json} (llm);
+
+% Prompt to LLM
+\draw[arrow] (prompt.south) -- ++(0,-1.8) -| (llm.east);
+
+% LLM to GEN
+\draw[arrow] (llm) -- (gen_bg);
+
+% GEN to Output
+\draw[arrow] (gen_bg) -- (summary);
+
+\end{tikzpicture}
+}%
+\caption{System Architecture Overview}
+\label{fig:architecture}
+\end{figure}
 
 \section{Evaluation}
 
