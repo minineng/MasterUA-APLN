@@ -7,6 +7,7 @@
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, backgrounds, calc}
 \usepackage{pagecolor}
 \usepackage{geometry}
+\usepackage[hidelinks]{hyperref}
 
 \title{Automatic summarization system}
 \author{Albert Sirvent Jerez, Enrique Cortés Tárraga and Carlos Sanchis Server}
@@ -14,6 +15,7 @@
 \date{February 26th, 2026}
 
 \begin{document}
+\sloppy
 
 \maketitle
 
@@ -24,134 +26,45 @@
 
 \section{Introduction}
 
+The density of legal language and the lack of a standard structured format in official public administration documents can pose a significant barrier for people who read them seeking specific information. That is the case of students who consult the Boletín Oficial del Estado (BOE) in search of information about scholarships.
+
+The objective of this project is to help them by programming an automatic summarization system: an end-to-end NLP pipeline that combines information extraction techniques with a generative text model and is able to identify and classify critical data points.
+
+During the development of this project, we avoided the use of commercial LLMs such as GPT, Llama or Gemini because we wanted to apply the NLP techniques and the knowledge acquired in class. Throughout this report we will indicate what techniques and models we have applied at each point and the reason for choosing them.
+
+\noindent \textbf{Source code:} \url{https://github.com/minineng/MasterUA-APLN}
+
 \section{Data}
+
+The corpus for this project consists of five official scholarship documents in PDF format published in the Boletín Oficial del Estado (BOE), covering the academic years from 2021-22 to 2025-26. These documents were provided by the professors and were preprocessed into Markdown files before attempting to extract the data.
+
+To transform these dense documents into structured data, we developed an extraction schema using a combination of Extractive Question Answering (QA) and Named Entity Recognition (NER). As we will see in the next section, this data extraction is managed by the \texttt{extractor.py} module, which uses two specialized language models assigned to specific tasks:
+
+\begin{itemize}
+\item \textbf{deepset/roberta-base-squad2 (QA Model)} \\
+Responsible for the core extraction logic. By processing the cleaned Markdown text, it answers a set of predefined natural language queries, written in Spanish to match the original language. These questions are detailed in the next file: \\
+
+\url{https://github.com/minineng/MasterUA-APLN/tree/main/data/config/questions.json}
+
+\item \textbf{es\_core\_news\_lg (NER Model)} \\
+The es\_core\_news\_lg (our NER) model from spaCy is used for identification of atomic entities such as dates, organizations and specific amounts. This is a large model trained on official news and media corpora, and acts as a validation layer, ensuring that the segments identified by the QA model correspond to the expected entity types.
+\end{itemize}
+
+\subsection{Structured output}
+
+The output data is saved in two different formats: CSV and JSON (but eventually we decided to use the second one to manage the summarization):
+
+\begin{itemize}
+  
+\item \textbf{CSV Format:} \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/processed/final_scholarship_dataset.csv}
+\item \textbf{JSON format:} \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/processed/final_scholarship_dataset.json}
+\end{itemize}
+
+As a result, we obtained a large set of variables per document, ensuring every important point is represented. Those variables cover administrative data (document title, academic year, official publication dates), specific amounts for scholarships related to residence, income thresholds and academic excellence, and temporal constraints (start and end dates for the application period).
 
 \section{Architecture}
 
-\begin{figure}[H]
-\centering
-\resizebox{0.9\textwidth}{!}{%
-\begin{tikzpicture}[
-    node distance=0.35cm and 0.6cm,
-    >=Stealth,
-    io/.style={cylinder, draw, shape border rotate=90, aspect=0.3, minimum height=0.7cm, minimum width=1.1cm, fill=blue!15, font=\tiny, align=center},
-    process/.style={rectangle, draw, rounded corners, minimum height=0.55cm, minimum width=1.5cm, fill=orange!20, font=\tiny, align=center},
-    subprocess/.style={rectangle, draw, minimum height=0.4cm, minimum width=1.2cm, fill=orange!10, font=\tiny, align=center},
-    subgraph/.style={rectangle, draw, dashed, rounded corners, inner sep=0.15cm, font=\tiny\bfseries},
-    arrow/.style={->, thick},
-    darrow/.style={->, thick, dashed},
-]
-
-% === INPUT SECTION ===
-\node[io] (pdf) {PDF Documents\\data/corpus/};
-\node[io, right=of pdf] (questions) {QA Config\\questions.json};
-\node[io, right=of questions] (prompt) {LLM Prompt\\summary\_prompt.txt};
-
-% Background for Input
-\begin{scope}[on background layer]
-    \node[subgraph, fill=green!5, fit=(pdf)(questions)(prompt), label=above:\textbf{Input}] (input_bg) {};
-\end{scope}
-
-% === STAGE 1: PDF Preprocessing ===
-\node[process, below=0.7cm of pdf] (pymupdf) {pymupdf4llm\\PDF to Markdown};
-
-\node[subprocess, below=0.4cm of pymupdf, xshift=-1.2cm] (preprocess1) {Section removal};
-\node[subprocess, below=0.4cm of pymupdf] (preprocess2) {Dehyphenation};
-\node[subprocess, below=0.4cm of pymupdf, xshift=1.2cm] (preprocess3) {Normalization};
-
-% Background for PREPROCESS
-\begin{scope}[on background layer]
-    \node[subgraph, fill=yellow!10, fit=(preprocess1)(preprocess2)(preprocess3), inner sep=0.1cm] (preprocess_bg) {};
-\end{scope}
-
-\node[io, below=0.5cm of preprocess_bg] (cleanmd) {Clean markdowns\\preprocessed/*.md};
-
-% Background for Stage 1
-\begin{scope}[on background layer]
-    \node[subgraph, fill=yellow!5, fit=(pymupdf)(preprocess_bg)(cleanmd), label=above:\textbf{Stage 1: PDF Preprocessing}] (stage1_bg) {};
-\end{scope}
-
-% === STAGE 1.5: Optional Analysis ===
-\node[process, right=1.5cm of pymupdf] (tfidf) {TF-IDF Vectorizer\\scikit-learn};
-\node[process, below=0.4cm of tfidf] (wc) {WordCloud Gen};
-\node[io, below=0.4cm of wc] (analysisout) {analysis/*.json\\*.png};
-
-% Background for Stage 1.5
-\begin{scope}[on background layer]
-    \node[subgraph, fill=purple!5, fit=(tfidf)(wc)(analysisout), label=above:\textbf{Stage 1.5: Optional}] (stage15_bg) {};
-\end{scope}
-
-% === STAGE 2: NLU Data Extraction ===
-\node[process, below=0.7cm of cleanmd] (ner) {SpaCy NER\\es\_core\_news\_sm};
-\node[process, right=of ner] (qa) {HF QA\\bert-base-spanish};
-\node[io, below=0.5cm of qa] (nluout) {final\_scholarship\\dataset.json/.csv};
-
-% Background for Stage 2
-\begin{scope}[on background layer]
-    \node[subgraph, fill=cyan!5, fit=(ner)(qa)(nluout), label=above:\textbf{Stage 2: NLU Data Extraction}] (stage2_bg) {};
-\end{scope}
-
-% === STAGE 3: Summary Generation ===
-\node[process, below=0.7cm of nluout, xshift=-0.8cm] (llm) {Qwen2.5-3B-Instruct\\Instruction-tuned LLM};
-
-\node[subprocess, below=0.35cm of llm, xshift=-1.2cm] (gen1) {Prompt format};
-\node[subprocess, below=0.35cm of llm] (gen2) {Text gen};
-\node[subprocess, below=0.35cm of llm, xshift=1.2cm] (gen3) {Temp: 0.3};
-
-% Background for GEN
-\begin{scope}[on background layer]
-    \node[subgraph, fill=red!10, fit=(gen1)(gen2)(gen3), inner sep=0.1cm] (gen_bg) {};
-\end{scope}
-
-% Background for Stage 3
-\begin{scope}[on background layer]
-    \node[subgraph, fill=red!5, fit=(llm)(gen_bg), label=above:\textbf{Stage 3: Summary Generation}] (stage3_bg) {};
-\end{scope}
-
-% === OUTPUT SECTION ===
-\node[io, below=0.5cm of gen_bg] (summary) {Summaries\\data/summary/};
-
-% Background for Output
-\begin{scope}[on background layer]
-    \node[subgraph, fill=green!5, fit=(summary), label=below:\textbf{Output}] (output_bg) {};
-\end{scope}
-
-% === FLOW CONNECTIONS ===
-% Input to Stage 1
-\draw[arrow] (pdf) -- (pymupdf);
-\draw[arrow] (pymupdf) -- (preprocess_bg);
-\draw[arrow] (preprocess_bg) -- (cleanmd);
-
-% Stage 1 to Stage 2
-\draw[arrow] (cleanmd) -- (ner);
-\draw[arrow] (ner) -- (qa);
-\draw[arrow] (qa) -- (nluout);
-
-% Stage 1 to Stage 1.5 (optional)
-\draw[darrow] (pymupdf.east) -- node[above, font=\tiny] {Opt} (tfidf.west);
-\draw[arrow] (tfidf) -- (wc);
-\draw[arrow] (wc) -- (analysisout);
-
-% Questions to QA
-\draw[arrow] (questions.south) -- ++(0,-0.3) -| (qa.north);
-
-% Stage 2 to Stage 3
-\draw[arrow] (nluout) -- node[right, font=\tiny] {json} (llm);
-
-% Prompt to LLM
-\draw[arrow] (prompt.south) -- ++(0,-1.8) -| (llm.east);
-
-% LLM to GEN
-\draw[arrow] (llm) -- (gen_bg);
-
-% GEN to Output
-\draw[arrow] (gen_bg) -- (summary);
-
-\end{tikzpicture}
-}%
-\caption{System Architecture Overview}
-\label{fig:architecture}
-\end{figure}
+The system is organized as a modular NLP pipeline with two main stages: information extraction and summary generation. In the first stage, the original PDF documents are converted into cleaned Markdown and processed with QA and NER models to populate a structured JSON representation. In the second stage, that JSON representation is passed to an instruction-tuned generative model that produces the final natural-language summary.
 
 \section{Evaluation}
 
@@ -236,7 +149,7 @@ Artículo:
 The generation stage was evaluated using the structured JSON dataset as input and comparing the produced summaries across all academic years. 
 The main differences observed between the tested models were related to their ability to interpret structured JSON inputs and transform them into coherent narrative text, as well as their stability in a local environment.
 
-Finally, the selected model (Qwen2.5-3B-Instruct) demonstrated solid instruction-following capabilities and good narrative quality, the only caveat was the generation length as we has several issues with truncation when the generated text was too long, so we had to adjust the generation parameters to ensure that the output remained within a reasonable length while still capturing all relevant information.
+Finally, the selected model (Qwen2.5-3B-Instruct) demonstrated solid instruction-following capabilities and good narrative quality. The main caveat was generation length, as we had several issues with truncation when the generated text was too long, so we had to adjust the generation parameters to ensure that the output remained within a reasonable length while still capturing all relevant information.
 
 The main observations are summarized below.
 
@@ -262,7 +175,7 @@ The main observations are summarized below.
 
 \section{Conclusion}
 
-......
+This project shows that a classical NLP pipeline combined with a compact instruction-tuned language model can be effective for assisting students who need to understand complex official scholarship calls. The extraction stage makes the relevant information explicit and machine-readable, while the generation stage converts that structure into a more accessible narrative form.
 
 In the generation stage, model selection proved crucial for producing coherent and faithful summaries. Lightweight Spanish summarization models were not suitable for structured JSON inputs, whereas instruction-tuned multilingual models performed significantly better.
 
