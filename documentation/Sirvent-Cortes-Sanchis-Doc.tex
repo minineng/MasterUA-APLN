@@ -6,6 +6,7 @@
 \usepackage{tikz}
 \usepackage{pagecolor}
 \usepackage{geometry}
+\usepackage[hidelinks]{hyperref}
 
 \title{Automatic summarization system}
 \author{Albert Sirvent Jerez, Enrique Cortés Tárraga and Carlos Sanchis Server}
@@ -13,6 +14,7 @@
 \date{February 26th, 2026}
 
 \begin{document}
+\sloppy
 
 \maketitle
 
@@ -23,30 +25,28 @@
 
 \section{Introduction}
 
-The density of legal language and the lack of an standard structured format in official public administration documents can suppose a significant barrier for some people who reads them seeking for specific information. That is the case of students who consult the Boletín Oficial del Estado (BOE) in search of information about scholarships.
+The density of legal language and the lack of a standard structured format in official public administration documents can pose a significant barrier for people who read them seeking specific information. That is the case of students who consult the Boletín Oficial del Estado (BOE) in search of information about scholarships.
 
 The objective of this project is to help them by programming an automatic summarization system: an end-to-end NLP pipeline that combines information extraction techniques with a generative text model and is able to identify and classify critical data points.
 
-During the development of this project, we avoided the use of commercial LLMs such as GPT, Llama or Gemini because we wanted to apply the NLP techniques and and the knowledge acquired in class. Throughout this report we will in dicate what techniques and models we have applied at each point and the reason for choosing them. \\
+During the development of this project, we avoided the use of commercial LLMs such as GPT, Llama or Gemini because we wanted to apply the NLP techniques and the knowledge acquired in class. Throughout this report we will indicate what techniques and models we have applied at each point and the reason for choosing them.
 
-\item \textbf{Source code:} \url{https://github.com/minineng/MasterUA-APLN
-}
+\noindent \textbf{Source code:} \url{https://github.com/minineng/MasterUA-APLN}
 
 \section{Data}
 
-The corpus for this project consists of five official scholarship documents in PDF format published in the Boletín Oficial del Estado (BOE), covering the academic years from 2021-22 to 2025-26. These documents were provided by the professors, and are preprocessed to Markdown files (which will be specified in the next section) before attempting to extract the data.
+The corpus for this project consists of five official scholarship documents in PDF format published in the Boletín Oficial del Estado (BOE), covering the academic years from 2021-22 to 2025-26. These documents were provided by the professors and were preprocessed into Markdown files before attempting to extract the data.
 
-To transform these dense documents into stuctured data, we developed an extraction schema, using a combination of Extractive Question Answering (QA) and Named Entity Recognition (NER). As we will see in the next section, this data extraction is managed by the extractor.py module, which uses two specialized language models assigned to specific tasks:
+To transform these dense documents into structured data, we developed an extraction schema using a combination of Extractive Question Answering (QA) and Named Entity Recognition (NER). As we will see in the next section, this data extraction is managed by the \texttt{extractor.py} module, which uses two specialized language models assigned to specific tasks:
 
 \begin{itemize}
 \item \textbf{deepset/roberta-base-squad2 (QA Model)} \\
 Responsible for the core extraction logic. By processing the cleaned Markdown text, it answers a set of predefined natural language queries, written in Spanish to match the original language. These questions are detailed in the next file: \\
 
-\url{https://github.com/minineng/MasterUA-APLN/tree/main/data/config/questions.json
-}
+\url{https://github.com/minineng/MasterUA-APLN/tree/main/data/config/questions.json}
 
 \item \textbf{es\_core\_news\_lg (NER Model)} \\
-The es_core_news_lg (our NER) model from spaCy is used for identification of atomic entities such as dates, organizations and specific amounts. This is a large model trained on official news and media corpora, and acts as a validation layer, ensuring that the segments identified by the QA model correspond to the expected entity types.
+The es\_core\_news\_lg (our NER) model from spaCy is used for identification of atomic entities such as dates, organizations and specific amounts. This is a large model trained on official news and media corpora, and acts as a validation layer, ensuring that the segments identified by the QA model correspond to the expected entity types.
 \end{itemize}
 
 \subsection{Structured output}
@@ -54,6 +54,7 @@ The es_core_news_lg (our NER) model from spaCy is used for identification of ato
 The output data is saved in two different formats: CSV and JSON (but eventually we decided to use the second one to manage the summarization):
 
 \begin{itemize}
+  
 \item \textbf{CSV Format:} \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/processed/final_scholarship_dataset.csv}
 \item \textbf{JSON format:} \url{https://github.com/minineng/MasterUA-APLN/tree/main/data/processed/final_scholarship_dataset.json}
 \end{itemize}
@@ -61,6 +62,8 @@ The output data is saved in two different formats: CSV and JSON (but eventually 
 As a result, we obtained a large set of variables per document, ensuring every important point is represented. Those variables cover administrative data (document title, academic year, official publication dates), specific amounts for scholarships related to residence, income thresholds and academic excellence, and temporal constraints (start and end dates for the application period).
 
 \section{Architecture}
+
+The system is organized as a modular NLP pipeline with two main stages: information extraction and summary generation. In the first stage, the original PDF documents are converted into cleaned Markdown and processed with QA and NER models to populate a structured JSON representation. In the second stage, that JSON representation is passed to an instruction-tuned generative model that produces the final natural-language summary.
 
 \section{Evaluation}
 
@@ -145,7 +148,7 @@ Artículo:
 The generation stage was evaluated using the structured JSON dataset as input and comparing the produced summaries across all academic years. 
 The main differences observed between the tested models were related to their ability to interpret structured JSON inputs and transform them into coherent narrative text, as well as their stability in a local environment.
 
-Finally, the selected model (Qwen2.5-3B-Instruct) demonstrated solid instruction-following capabilities and good narrative quality, the only caveat was the generation length as we has several issues with truncation when the generated text was too long, so we had to adjust the generation parameters to ensure that the output remained within a reasonable length while still capturing all relevant information.
+Finally, the selected model (Qwen2.5-3B-Instruct) demonstrated solid instruction-following capabilities and good narrative quality. The main caveat was generation length, as we had several issues with truncation when the generated text was too long, so we had to adjust the generation parameters to ensure that the output remained within a reasonable length while still capturing all relevant information.
 
 The main observations are summarized below.
 
@@ -171,7 +174,7 @@ The main observations are summarized below.
 
 \section{Conclusion}
 
-......
+This project shows that a classical NLP pipeline combined with a compact instruction-tuned language model can be effective for assisting students who need to understand complex official scholarship calls. The extraction stage makes the relevant information explicit and machine-readable, while the generation stage converts that structure into a more accessible narrative form.
 
 In the generation stage, model selection proved crucial for producing coherent and faithful summaries. Lightweight Spanish summarization models were not suitable for structured JSON inputs, whereas instruction-tuned multilingual models performed significantly better.
 
